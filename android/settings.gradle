@@ -1,0 +1,27 @@
+rootProject.name = 'Foot_Care'
+include ':react-native-ble-plx'
+project(':react-native-ble-plx').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ble-plx/android')
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+include ':react-native-bluetooth-serial-next'
+project(':react-native-bluetooth-serial-next').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bluetooth-serial-next/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-bluetooth-serial-next'
+project(':react-native-bluetooth-serial-next').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bluetooth-serial-next/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+include ':react-native-seoul-kakao-login'
+project(':react-native-seoul-kakao-login').projectDir = new File(rootProject.projectDir,     '../node_modules/@react-native-seoul/kakao-login/android')
+include ':react-native-radial-gradient'
+project(':react-native-radial-gradient').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-radial-gradient/android')
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(settingsDir, '../node_modules/react-native-fs/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
