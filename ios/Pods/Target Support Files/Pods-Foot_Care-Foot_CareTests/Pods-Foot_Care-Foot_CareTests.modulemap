@@ -1,0 +1,6 @@
+module Pods_Foot_Care_Foot_CareTests {
+  umbrella header "Pods-Foot_Care-Foot_CareTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

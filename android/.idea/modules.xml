@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Foot_Care.iml" filepath="$PROJECT_DIR$/.idea/modules/Foot_Care.iml" group="Foot_Care" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Foot_Care/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-63584931/react-native-ble-manager.iml" filepath="$PROJECT_DIR$/.idea/modules/-63584931/react-native-ble-manager.iml" group="Foot_Care/react-native-ble-manager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/40816812/react-native-ble-plx.iml" filepath="$PROJECT_DIR$/.idea/modules/40816812/react-native-ble-plx.iml" group="Foot_Care/react-native-ble-plx" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-922113489/react-native-bluetooth-serial-next.iml" filepath="$PROJECT_DIR$/.idea/modules/-922113489/react-native-bluetooth-serial-next.iml" group="Foot_Care/react-native-bluetooth-serial-next" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1255492815/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1255492815/react-native-community_masked-view.iml" group="Foot_Care/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-461106394/react-native-community_picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-461106394/react-native-community_picker.iml" group="Foot_Care/react-native-community_picker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1884580139/react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/1884580139/react-native-fs.iml" group="Foot_Care/react-native-fs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-852053272/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-852053272/react-native-gesture-handler.iml" group="Foot_Care/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-232102150/react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/-232102150/react-native-linear-gradient.iml" group="Foot_Care/react-native-linear-gradient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1964541018/react-native-permissions.iml" filepath="$PROJECT_DIR$/.idea/modules/-1964541018/react-native-permissions.iml" group="Foot_Care/react-native-permissions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4759360/react-native-radial-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/4759360/react-native-radial-gradient.iml" group="Foot_Care/react-native-radial-gradient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1370244556/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1370244556/react-native-reanimated.iml" group="Foot_Care/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2128039599/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-2128039599/react-native-safe-area-context.iml" group="Foot_Care/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1914786473/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1914786473/react-native-screens.iml" group="Foot_Care/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1966873426/react-native-seoul-kakao-login.iml" filepath="$PROJECT_DIR$/.idea/modules/1966873426/react-native-seoul-kakao-login.iml" group="Foot_Care/react-native-seoul-kakao-login" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1966873426/react-native-seoul_kakao-login.iml" filepath="$PROJECT_DIR$/.idea/modules/1966873426/react-native-seoul_kakao-login.iml" group="Foot_Care/react-native-seoul_kakao-login" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-629440716/react-native-splash-screen.iml" filepath="$PROJECT_DIR$/.idea/modules/-629440716/react-native-splash-screen.iml" group="Foot_Care/react-native-splash-screen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/147230190/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/147230190/react-native-vector-icons.iml" group="Foot_Care/react-native-vector-icons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1173729051/react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/1173729051/react-native-webview.iml" group="Foot_Care/react-native-webview" />
+    </modules>
+  </component>
+</project>

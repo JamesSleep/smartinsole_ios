@@ -1,5 +1,4 @@
-import BluetoothSerial from 'react-native-bluetooth-serial-next';
-
+//import BluetoothSerial from 'react-native-bluetooth-serial-next';
 import React, { useState, useEffect } from 'react';
 import { Text, View, TouchableOpacity, ToastAndroid,NativeModules, NativeEventEmitter } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
@@ -26,11 +25,11 @@ function Bluetooth({navigation}) {
 
     useEffect(() => {
         Splash.hide();
-        console.log("gogo")
+        /* console.log("gogo")
         let states = manager.onStateChange();
         if(states == "PoweredOn"){
             setState(state)
-        }
+        } */
         
         // list();
         // isConnect(LeftDevice);
@@ -68,73 +67,6 @@ function Bluetooth({navigation}) {
         console.log(st);
     }
 
-    const list = async () => {
-        const devices = await BluetoothSerial.discoverUnpairedDevices();
-        console.log(devices);
-        
-        try {
-            const device = await BluetoothSerial.list()
-            .then(res=> {
-                for(let i=0; i<res.length; i++) {
-                    if(res[i].name === LEFT_INSOLE_NAME) {
-                        setLeft({...LeftDevice,id:res[i].id,name:res[i].name})
-                    }
-                    if(res[i].name === RIGHT_INSOLE_NAME) {
-                        setRight({...RightDevice,id:res[i].id,name:res[i].name})
-                    }
-                }
-                setDevices(JSON.stringify(res));
-            });  
-        } catch (e) {
-            ToastAndroid.show(JSON.stringify(e),ToastAndroid.SHORT);
-        }
-    }
-    const isConnect = async (device) => {
-        if(device.name !== "") {
-            try {
-                const rs = await BluetoothSerial.isConnected(device.id)
-                .then(res => {
-                    if(!res) {
-                        connect(device);
-                    } else {
-                        if(device.name === LEFT_INSOLE_NAME) { setLeft({...LeftDevice,isConnect:true}) }
-                        if(device.name === RIGHT_INSOLE_NAME) { setRight({...RightDevice,isConnect:true}) }
-                    }
-                })
-            } catch (e) {
-                ToastAndroid.show(JSON.stringify(e),ToastAndroid.SHORT);
-            }
-        } else {
-            ToastAndroid.show("블루투스 설정을 확인해주세요",ToastAndroid.SHORT);
-        }
-    }
-    const connect = async (device) => {
-        try {
-            const rs = await BluetoothSerial.connect(device.id)
-            .then(res => {
-                if (res.id === device.id) {
-                    ToastAndroid.show(`${device.name} 연결완료`,ToastAndroid.SHORT);
-                    if(device.name === LEFT_INSOLE_NAME) { setLeft({...LeftDevice,isConnect:true}) }
-                    if(device.name === RIGHT_INSOLE_NAME) { setRight({...RightDevice,isConnect:true}) }
-                } else {
-                    ToastAndroid.show(`${device.name} 연결실패`,ToastAndroid.SHORT);
-                }
-            });
-        } catch (e) {
-            ToastAndroid.show(JSON.stringify(e),ToastAndroid.SHORT);
-        }
-    }
-    const readData = async (device) => {
-        try {
-            await BluetoothSerial.write("start",device.id);
-            BluetoothSerial.read((data,subscription) => {
-                setLog([...log,<Text key={log.length+1}>{`[${device.name}] : ${data}`}</Text>]); 
-            },'}',device.id);
-        } catch (e) {
-            setLog([...log,<Text key={log.length+1}>{`오류 : ${e}`}</Text>]);
-        }
-    }
-
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1, alignItems:"center"}} >
 			<MainView>
@@ -160,7 +92,7 @@ function Bluetooth({navigation}) {
                     </BluetoothBox>
                 </View>
 			</MainView>
-            <NextBtn onPress={()=>onBlu()}>
+            <NextBtn onPress={()=>navigation.navigate('MainRouter')}>
                 <Text style={{fontSize:22, fontWeight:"bold"}}>시작하기</Text>
             </NextBtn>
         </LinearGradient>

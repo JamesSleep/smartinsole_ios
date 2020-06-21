@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import RadialGradient from 'react-native-radial-gradient';
 
+const color = [
+    {inner : "#ff4757", outer : "#ff7f50"},
+    {inner : "#fff200", outer : "#fffa65"},
+    {inner : "#5352ed", outer : "#70a1ff"},
+];
+
 export default function Temperature({data}) {
-    const colorHandler = (index) => {
-        if (index )
+    const left = data.left.temp;
+    const right = data.right.temp;
+    const colorHandler = (temp) => {
+        if (temp <= 45 && temp >= 36) return 0;
+        else if (temp <= 35 && temp >= 27) return 1;
+        else return 2;
     }
     return (
         <>
@@ -13,62 +23,62 @@ export default function Temperature({data}) {
             {/* LEFT FOOT */}
             {/* TL1 */}
             <RadialGradient style={{width:70,height:70,position:'absolute',left:"21%",top:"14%",zIndex:2,}}
-                colors={['#ff4757','#ff7f50',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(left[1])].inner,color[colorHandler(left[1])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[35,35]}
                 radius={30}/>  
             {/* TL0 */}
             <RadialGradient style={{width:50,height:50,position:'absolute',left:"31%",top:"35%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(left[0])].inner,color[colorHandler(left[0])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TL2 */}
             <RadialGradient style={{width:50,height:50,position:'absolute',left:"20%",top:"34%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(left[2])].inner,color[colorHandler(left[2])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TL3 */}
             <RadialGradient style={{width:50,height:50, position:'absolute',left:"10%",top:"36%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(left[3])].inner,color[colorHandler(left[3])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TL4 */}
             <RadialGradient style={{width:70,height:70, position:'absolute',left:"18%",bottom:"15%",zIndex:1,}}
-                colors={['#fff200','#fffa65',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(left[4])].inner,color[colorHandler(left[4])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[35,35]}
                 radius={35}/>
             {/* RIGHT FOOT */}
             {/* TR1 */}
             <RadialGradient style={{width:70,height:70,position:'absolute',right:"21%",top:"14%",zIndex:2,}}
-                colors={['#ff4757','#ff7f50',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(right[1])].inner,color[colorHandler(right[1])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[35,35]}
                 radius={30}/>  
             {/* TR0 */}
             <RadialGradient style={{width:50,height:50,position:'absolute',right:"31%",top:"35%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(right[0])].inner,color[colorHandler(right[0])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TR2 */}
             <RadialGradient style={{width:50,height:50,position:'absolute',right:"20%",top:"34%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(right[2])].inner,color[colorHandler(right[2])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TR3 */}
             <RadialGradient style={{width:50,height:50, position:'absolute',right:"10%",top:"36%",zIndex:1,}}
-                colors={['#5352ed','#70a1ff',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(right[3])].inner,color[colorHandler(right[3])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[25,25]}
                 radius={25}/>
             {/* TR4 */}
             <RadialGradient style={{width:70,height:70, position:'absolute',right:"18%",bottom:"15%",zIndex:1,}}
-                colors={['#fff200','#fffa65',"rgba(214,215,220,0)"]}
+                colors={[color[colorHandler(right[4])].inner,color[colorHandler(right[4])].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
                 center={[35,35]}
                 radius={35}/>

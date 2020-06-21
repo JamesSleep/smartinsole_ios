@@ -4,6 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components';
 import Average from './Average';
+import Percentage from './Percentage';
 
 const LEFT_INSOLE_NAME = "left insole"; 
 const RIGHT_INSOLE_NAME = "right insole";
@@ -44,7 +45,7 @@ function Analysis({navigation}) {
                         <TabBtn onPress={()=>setTab(false)}><TabText>질병확률</TabText></TabBtn>
                     </InsoleTab2>
                     <InsoleDataColumn>
-                        {tabSwipe?<Average />:null}
+                        {tabSwipe?<Average />:<Percentage />}
                     </InsoleDataColumn>
                 </View>
             </View>
@@ -63,6 +64,7 @@ const InsoleDataColumn = styled.View`
     width : 100%;
     height : 90%;
     background-color : white;
+    border-top-left-radius : 25px;
     border-top-right-radius : 25px;
     border-bottom-left-radius : 25px;
     border-bottom-right-radius : 25px;

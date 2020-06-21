@@ -22,7 +22,9 @@ function Home({navigation}) {
 			if(data != null) { 
 				setToken(data.token);
 				loadUserData(data.token);
-			} 
+			} else {
+				Splash.hide();
+			}
 		})
 	}
     const loadUserData = async (storageToken) => {

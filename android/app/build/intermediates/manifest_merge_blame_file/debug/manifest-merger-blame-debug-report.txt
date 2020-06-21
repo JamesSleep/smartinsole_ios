@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.foot_care"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:5:5-68
+13-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:5:22-65
+14    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+14-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:6:5-74
+14-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:6:22-71
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:7:5-81
+15-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->[com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+16-->[com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->[:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+17-->[:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+18
+19    <uses-feature
+19-->[:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+20        android:name="android.hardware.bluetooth_le"
+20-->[:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-53
+21        android:required="false" />
+21-->[:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+22
+23    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->[com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:14:5-88
+23-->[com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:14:29-85
+24
+25    <application
+25-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:9:5-28:19
+26        android:name="com.foot_care.MainApplication"
+26-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:10:7-38
+27        android:allowBackup="true"
+27-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:14:7-33
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:12:7-41
+31        android:label="@string/app_name"
+31-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:11:7-39
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:13:7-52
+33        android:supportsRtl="true"
+33-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
+34        android:theme="@style/AppTheme"
+34-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:15:7-38
+35        android:usesCleartextTraffic="true" >
+35-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:7:18-53
+36        <activity
+36-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:16:7-26:18
+37            android:name="com.foot_care.MainActivity"
+37-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:17:9-37
+38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+38-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:19:9-86
+39            android:label="@string/app_name"
+39-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:18:9-41
+40            android:launchMode="singleTask"
+40-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:20:9-40
+41            android:windowSoftInputMode="adjustPan" >
+41-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:21:9-48
+42            <intent-filter>
+42-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:22:9-25:25
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:23:13-65
+43-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:23:21-62
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:24:13-73
+45-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:24:23-70
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- 2 -->
+48-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:27:7-84
+48-->/Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:27:17-81
+49        <!-- 3 -->
+50        <meta-data
+50-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
+51            android:name="com.kakao.sdk.AppKey"
+51-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
+52            android:value="@string/kakao_app_key" /> <!-- 4 -->
+52-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-50
+53        <activity
+53-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:20
+54            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+54-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+55            android:configChanges="orientation|screenSize"
+55-->[com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:14:13-59
+56            android:exported="false"
+56-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+57            android:label="@string/com_kakao_login_button"
+57-->[com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:16:13-59
+58            android:launchMode="singleTop"
+58-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-43
+59            android:windowSoftInputMode="adjustResize" >
+59-->[:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-55
+60        </activity>
+61
+62        <provider
+62-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+63            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+63-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+64            android:authorities="com.foot_care.fileprovider"
+64-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+65            android:exported="false"
+65-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+66            android:grantUriPermissions="true" >
+66-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+67            <meta-data
+67-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+68                android:name="android.support.FILE_PROVIDER_PATHS"
+68-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+69                android:resource="@xml/file_provider_paths" />
+69-->[:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+70        </provider>
+71    </application>
+72
+73</manifest>
