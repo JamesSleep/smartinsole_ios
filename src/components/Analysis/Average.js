@@ -5,8 +5,13 @@ import Swiper from 'react-native-swiper';
 import Modal from 'react-native-modal';
 import Calendar from './Calendar';
 import Chart from './Chart';
+import InsoleData from '../Insole/InsoleData';
 
 const WEEK_ENUM = ["첫째주","둘째주","셋째주","넷째주","다섯째주","여섯째주"];
+const FAKE_DB = { 
+    left : {temp:[18,25,45,41,42], press:[353, 828, 2120, 2577, 2601, 3082, 3349, 3357, 3494]} , 
+    right : {temp:[27,21,32,33,42], press:[157, 230, 1481, 1776, 2213, 2536, 3640, 3756, 4021]} 
+};
 
 function Average() {
     const [tab, setTab] = useState(true);
@@ -43,7 +48,6 @@ function Average() {
             day = 0;
         }
         setWeek(weekObj);
-      
     }
     const findWeek = () => {
         for (let i=0; i<week.length; i++) {
@@ -92,8 +96,8 @@ function Average() {
                     <Swiper height={280} loop={false} onMomentumScrollEnd={(e, state, context) => {
                         state.index === 1?setSwap(true):setSwap(false);
                     }}>
-                        <FootDataView><Text>온도</Text></FootDataView>
-                        <FootDataView><Text>압력</Text></FootDataView>
+                        <FootDataView><InsoleData name={"temp"} data={FAKE_DB}/></FootDataView>
+                        <FootDataView><InsoleData name={"press"} data={FAKE_DB}/></FootDataView>
                     </Swiper>
                     {!tab?
                         <ChartView>

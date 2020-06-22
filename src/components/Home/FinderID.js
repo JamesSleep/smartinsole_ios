@@ -1,51 +1,78 @@
 import React, { useState } from 'react';
-import {  View, Text , ToastAndroid } from 'react-native'
+import {  View, Text , TouchableWithoutFeedback, Keyboard } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import Axios from 'axios';
 
+const SITE_URL = "http://foot.chaeft.com:8080/api";
+const FIND_API = "/auth/findByNumber";
+
 function FinderID({navigation}) {
     const [isFind, setFind] = useState(false);
-    const tempEmail = "tyuyiy@naver.com";
+    const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("");
+
+    const post = async () => {
+        const postData = JSON.stringify({ "number" : phone });
+        await Axios.post(SITE_URL+FIND_API, postData, {
+            headers : {
+                'Content-Type' : 'application/json',
+            }
+        }).then(res=>{ // false 없음
+            if(res.data.success) { 
+                setFind(true);
+                setEmail(res.data.email);
+            } else {
+                alert("핸드폰번호를 확인해주세요");
+            }
+        }).catch(err=>{
+            console.log("err :" + err);
+            alert(JSON.stringify(err));
+        });
+    }
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1,justifyContent:"center",alignItems:"center"}}>
-            <Icon name="angle-left" size={28} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
-            {   isFind?
-                    <FinderBox>
-                        <Text style={{fontSize:18, paddingBottom:20,marginBottom:40,textAlign:"center",borderBottomColor:"#7f8c8d",borderBottomWidth:7}}>
-                            {"입력하신 정보와 일치하는\nID(이메일)는 다음과 같습니다"}
-                        </Text>
-                        <View style={{width:"100%",height:"50%", marginTop:10, flexDirection:"row", paddingLeft:10, justifyContent:"center", alignItems:"center"}}>
-                            <Text style={{fontSize:30}}>{tempEmail}</Text>
-                        </View>
-                    </FinderBox>
-                :
-                <FinderBox>
-                    <FinderTitle editable={false} value={"ID(이메일)찾기"}/>
-                    <Text style={{fontSize:18, fontWeight:"bold", paddingLeft:10}}>핸드폰번호를 입력해주세요</Text>
-                    <View style={{marginTop:10, flexDirection:"row", paddingLeft:10, alignItems:"center"}}>
-                        <InputData placeholder="핸드폰번호를 입력해주세요" placeholderTextColor="gray"></InputData>
-                        <CustomBtn><Text style={{color:"white", textAlign:"center"}}>{"인증번호\n전송"}</Text></CustomBtn>
-                    </View>
-                    <View style={{marginTop:10, flexDirection:"row", paddingLeft:10, alignItems:"center"}}>
-                        <InputData placeholder="인증번호를 입력해주세요" placeholderTextColor="gray"></InputData>
-                        <CustomBtn><Text style={{color:"white", textAlign:"center"}}>인증하기</Text></CustomBtn>
-                    </View>
-                </FinderBox>
-            }
-            { isFind?
-                <PostButton onPress={()=>navigation.navigate('Login')}>
-                    <Text style={{fontSize:25, color:"black", textAlign:"center"}}>로그인하기</Text>
-                </PostButton>
-                :
-                <PostButton onPress={()=>setFind(true)}>
-                    <Text style={{fontSize:25, color:"black", textAlign:"center"}}>확인</Text>
-                </PostButton>
-            }
-            <Text onPress={()=>navigation.navigate('FinderPW')} style={{fontSize: 15, fontWeight:"bold"}}>
-                비밀번호 찾기
-            </Text>
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                <View style={{flex:1, width:"100%", height:"100%", justifyContent:"center",alignItems:"center"}}>
+                    <Icon name="angle-left" size={28} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
+                    {   isFind?
+                        <FinderBox>
+                            <Text style={{fontSize:18, paddingBottom:20,marginBottom:40,textAlign:"center",borderBottomColor:"#7f8c8d",borderBottomWidth:7}}>
+                                {"입력하신 정보와 일치하는\nID(이메일)는 다음과 같습니다"}
+                            </Text>
+                            <View style={{width:"100%",height:"50%", marginTop:10, flexDirection:"row", paddingLeft:10, justifyContent:"center", alignItems:"center"}}>
+                                <Text style={{fontSize:30}}>{email}</Text>
+                            </View>
+                        </FinderBox>
+                        :
+                        <FinderBox>
+                            <FinderTitle editable={false} value={"ID(이메일)찾기"}/>
+                            <Text style={{fontSize:18, fontWeight:"bold", paddingLeft:10}}>핸드폰번호를 입력해주세요</Text>
+                            <View style={{marginTop:10, flexDirection:"row", paddingLeft:10, alignItems:"center"}}>
+                                <InputData placeholder="핸드폰번호를 입력해주세요" placeholderTextColor="gray" onChangeText={text=>setPhone(text)}/>
+                                <CustomBtn><Text style={{color:"white", textAlign:"center"}}>{"인증번호\n전송"}</Text></CustomBtn>
+                            </View>
+                            <View style={{marginTop:10, flexDirection:"row", paddingLeft:10, alignItems:"center"}}>
+                                <InputData placeholder="인증번호를 입력해주세요" placeholderTextColor="gray"></InputData>
+                                <CustomBtn><Text style={{color:"white", textAlign:"center"}}>인증하기</Text></CustomBtn>
+                            </View>
+                        </FinderBox>
+                    }
+                    { isFind?
+                        <PostButton onPress={()=>navigation.navigate('Login')}>
+                            <Text style={{fontSize:25, color:"black", textAlign:"center"}}>로그인하기</Text>
+                        </PostButton>
+                        :
+                        <PostButton onPress={()=>post()}>
+                            <Text style={{fontSize:25, color:"black", textAlign:"center"}}>확인</Text>
+                        </PostButton>
+                    }
+                    <Text onPress={()=>navigation.navigate('FinderPW')} style={{fontSize: 15, fontWeight:"bold"}}>
+                        비밀번호 찾기
+                    </Text>
+                </View>
+            </TouchableWithoutFeedback>
         </LinearGradient>
     )
 }

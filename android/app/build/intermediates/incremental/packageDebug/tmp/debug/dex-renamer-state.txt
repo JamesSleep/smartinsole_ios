@@ -1,4 +1,4 @@
-#Sun Jun 21 20:43:12 KST 2020
+#Mon Jun 22 09:58:25 KST 2020
 base.2=/Users/jamessleep/Documents/smartinsole_ios/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes3.dex
 path.2=classes3.dex
 base.1=/Users/jamessleep/Documents/smartinsole_ios/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes2.dex

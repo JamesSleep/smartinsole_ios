@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet ,StatusBar, Image, AsyncStorage } from 'react-native';
+import { StyleSheet ,StatusBar, Image, AsyncStorage, Platform } from 'react-native';
 import { Text, View, Button, Thumbnail } from 'native-base'; //사용하지않을예정 수정필요
 import LinearGradient from 'react-native-linear-gradient'; //그라데이션 모듈
 import styled from 'styled-components';
@@ -13,6 +13,7 @@ function Home({navigation}) {
 	const [token, setToken] = useState("");
 	useEffect(() => {
 		autoLogin();
+		Splash.hide();
 	},[])
 
 	const autoLogin = async () => {

@@ -6,10 +6,10 @@ import WebView  from 'react-native-webview';
 function Social({navigation}) {
     return (
         <>
-        <View style={{  }}>
-            <TouchableOpacity><Text>back</Text></TouchableOpacity>
+        <View >
+            <TouchableOpacity onPress={()=>navigation.goBack()}><Text>back</Text></TouchableOpacity>
         </View>
-        <View style={{ width:"100%", height:50 }}>
+        <View>
             <WebView
                 source={{ uri: 'https://www.naver.com/' }}
                 style={{ flex:1 }}

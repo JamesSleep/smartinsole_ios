@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  View , Text , ToastAndroid, AsyncStorage } from 'react-native';
+import {  View , Text , AsyncStorage, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
@@ -21,7 +21,6 @@ function Login({navigation}) {
 		await Axios.post(SITE_URL+API, postData, {
 			headers : {	'Content-Type' : 'application/json', }
 		}).then(res=>{ // response : success, token
-			console.log(res.data);
 			if(res.data.success) { //블루투스 기기연결 확인 후 BT SET or MAIN
 				AsyncStorage.setItem('loginInfo', JSON.stringify({
 					"token" : res.data.token
@@ -31,26 +30,30 @@ function Login({navigation}) {
 					routes:[{name:"Bluetooth"}]
 				});
 			} else {
-				ToastAndroid.show("로그인 정보를 확인해주세요",ToastAndroid.SHORT);
+				alert("로그인 정보를 확인해주세요");
 			}
 		}).catch(err=>{
 			console.log("err :" + err);
-			ToastAndroid.show(JSON.stringify(err),ToastAndroid.SHORT);
+			alert(JSON.stringify(err));
 		});
 	}
     return (
 		<LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1,justifyContent:"center",alignItems:"center"}}>
-			<Icon name="angle-left" size={40} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
-			<FakeLogo />
-			<LoginCard>
-				<InputData onChangeText={text=>setEmail(text)} placeholder="이메일" placeholderTextColor="gray"/>
-				<InputData onChangeText={text=>setPW(text)} secureTextEntry placeholder="비밀번호" placeholderTextColor="gray"/>
-				<CustomBtn onPress={()=>post()}><LoginText>로그인</LoginText></CustomBtn>
-				<View style={{width:"80%", flexDirection:"row", justifyContent:"space-around"}}>
-					<Text onPress={()=>navigation.navigate('FinderID')} style={{color:"black", opacity: 0.7}}>ID(이메일)찾기</Text>
-					<Text onPress={()=>navigation.navigate('FinderPW')} style={{color:"black", opacity: 0.7}}>비밀번호찾기</Text>
+			<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+				<View style ={{flex:1, width:"100%", height:"100%", justifyContent:"center",alignItems:"center"}}>
+					<Icon name="angle-left" size={40} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
+					<FakeLogo />
+					<LoginCard>
+						<InputData onChangeText={text=>setEmail(text)} placeholder="이메일" placeholderTextColor="gray"/>
+						<InputData onChangeText={text=>setPW(text)} secureTextEntry placeholder="비밀번호" placeholderTextColor="gray"/>
+						<CustomBtn onPress={()=>post()}><LoginText>로그인</LoginText></CustomBtn>
+						<View style={{width:"80%", flexDirection:"row", justifyContent:"space-around"}}>
+							<Text onPress={()=>navigation.navigate('FinderID')} style={{color:"black", opacity: 0.7}}>ID(이메일)찾기</Text>
+							<Text onPress={()=>navigation.navigate('FinderPW')} style={{color:"black", opacity: 0.7}}>비밀번호찾기</Text>
+						</View>
+					</LoginCard>
 				</View>
-			</LoginCard>
+			</TouchableWithoutFeedback>
 		</LinearGradient>
     );
 }

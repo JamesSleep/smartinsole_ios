@@ -4,7 +4,6 @@ import { Text, View, TouchableOpacity, ToastAndroid,NativeModules, NativeEventEm
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import Splash from 'react-native-splash-screen';
 import { BleManager } from "react-native-ble-plx"
 
 
@@ -24,7 +23,6 @@ function Bluetooth({navigation}) {
 
 
     useEffect(() => {
-        Splash.hide();
         /* console.log("gogo")
         let states = manager.onStateChange();
         if(states == "PoweredOn"){
@@ -53,8 +51,6 @@ function Bluetooth({navigation}) {
             }
         });   
     }
-
-
     const setupNotifications = async (device) => {
         await manager.stopDeviceScan();
         console.log(device.serviceUUIDs);
