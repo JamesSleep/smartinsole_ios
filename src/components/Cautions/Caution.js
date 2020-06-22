@@ -46,8 +46,8 @@ function Caution({navigation}) {
             </View>
             <DiseaseView>
                 <DiseaseTitle>
-                    <Text style={{textAlign:"center", fontSize:20, fontWeight:"bold"}}>{`${userInfo.nickname}회원님의 위험질병`}</Text>
-                    <Icon name="bell" size={25} color="#7f8c8d" style={{position:"absolute",right:20}} onPress={()=>navigation.navigate('CautionSetting')}/>
+                    <Text style={{textAlign:"center", fontSize:20, fontWeight:"bold"}}>{`${userInfo.name}회원님의 위험질병`}</Text>
+                    <Icon name="bell" size={25} color="#7f8c8d" style={{position:"absolute",right:10}} onPress={()=>navigation.navigate('CautionSetting')}/>
                 </DiseaseTitle>
                 <ScrollView>
                     {/*use array.map() */}

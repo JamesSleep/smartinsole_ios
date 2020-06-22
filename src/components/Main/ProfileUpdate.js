@@ -11,7 +11,7 @@ const JOIN_API = "/user/mod?token=";
 
 function ProfileUpdate({navigation, route}) {
     const { userInfo } = route.params;
-    const [userName, setUserName] = useState(userInfo.nickname);
+    const [userName, setUserName] = useState(userInfo.name);
     const [phoneNum, setPhoneNum] = useState(userInfo.num);
     const [gender, setGender] = useState(userInfo.sex);
     const [weight, setWeight] = useState(userInfo.weight.toString());
@@ -20,7 +20,7 @@ function ProfileUpdate({navigation, route}) {
     //post 실행시 빈값("")도 넘어감 수정필요
     const post = async () => {
         const postData = JSON.stringify({
-            "nickname" : userName,
+            "name" : userName,
             "number" : phoneNum,
             "sex" : gender,
             "weight" : Number(weight),

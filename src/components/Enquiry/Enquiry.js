@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { View, Text, ScrollView, AsyncStorage } from 'react-native';
 import Axios from 'axios';
+import { and } from 'react-native-reanimated';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = ["/board/list?start=1&token=","/comment/list"];
@@ -12,6 +13,7 @@ const API = ["/board/list?start=1&token=","/comment/list"];
 function Enquiry({navigation}) {
     const [token, setToken] = useState("");
     const [enquiryArray, setEnquiryArray] = useState([]);
+    const [enqiuryLen, setLen] = useState(enquiryArray.length);
     useEffect(() => {
         getToken();
         if(token != "") getEnquiryList();
@@ -49,6 +51,23 @@ function Enquiry({navigation}) {
 		}).catch(err=>{
 			console.log("err :" + err);
 		});
+    }
+    const deletePost = async (id) => {
+        const postData = JSON.stringify({ "id" : id });
+        await Axios.post(SITE_URL+"/board/del?token="+token, postData,{
+			headers : {	'Content-Type' : 'application/json', }
+		})
+        .then(res=>{
+            if(res.data.success) {
+                alert("삭제완료");
+                navigation.reset({
+					index:0,
+					routes:[{name:"Enquiry"}]
+				});
+            } else {
+                alert(res.data.message);
+            }
+        });
     }
 
     return (
@@ -93,8 +112,12 @@ function Enquiry({navigation}) {
                                                 :null
                                             }
                                             <BtnView>
-                                                <ModifyBtn><Text style={{textAlign:"center", fontSize:15, color: "white"}}>수정하기</Text></ModifyBtn>
-                                                <ModifyBtn><Text style={{textAlign:"center", fontSize:15, color: "white"}}>삭제하기</Text></ModifyBtn>
+                                                <ModifyBtn onPress={()=>navigation.navigate("ModifyEnquiry",{data:value})}>
+                                                    <Text style={{textAlign:"center", fontSize:15, color: "white"}}>수정하기</Text>
+                                                </ModifyBtn>
+                                                <ModifyBtn onPress={()=>deletePost(value.id)}>
+                                                    <Text style={{textAlign:"center", fontSize:15, color: "white"}}>삭제하기</Text>
+                                                </ModifyBtn>
                                             </BtnView>
                                             </>
                                             : null

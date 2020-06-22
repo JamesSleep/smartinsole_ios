@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet ,StatusBar, Image, AsyncStorage, Platform } from 'react-native';
+import { StyleSheet ,StatusBar, Image, AsyncStorage } from 'react-native';
 import { Text, View, Button, Thumbnail } from 'native-base'; //사용하지않을예정 수정필요
 import LinearGradient from 'react-native-linear-gradient'; //그라데이션 모듈
-import styled from 'styled-components';
-import Splash from 'react-native-splash-screen';
 import Axios from 'axios';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
@@ -13,7 +11,6 @@ function Home({navigation}) {
 	const [token, setToken] = useState("");
 	useEffect(() => {
 		autoLogin();
-		Splash.hide();
 	},[])
 
 	const autoLogin = async () => {
@@ -24,7 +21,7 @@ function Home({navigation}) {
 				setToken(data.token);
 				loadUserData(data.token);
 			} else {
-				Splash.hide();
+				
 			}
 		})
 	}
@@ -39,12 +36,9 @@ function Home({navigation}) {
 			} else {
 				alert("토큰정보가 만료되었습니다");
 				AsyncStorage.clear();
-				Splash.hide();
-				ToastAndroid.show("토큰 정보를 확인해주세요",ToastAndroid.SHORT);
 			}
 		}).catch(err=>{
 			console.log("err :" + err);
-			ToastAndroid.show(JSON.stringify(err),ToastAndroid.SHORT);
 		});
 	}
 

@@ -3,6 +3,7 @@ import { View, Text, AsyncStorage } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 function CautionSetting({navigation}) {
     const [all, setAll] = useState(false);
@@ -25,14 +26,17 @@ function CautionSetting({navigation}) {
         await AsyncStorage.getItem("alram")
         .then(res => {
             const data = JSON.parse(res);
-            setAll(data["all"] === "true");
-            setDanger(data["danger"] === "true");
-            setCaution(data["caution"] === "true");
+            if(data !== null) {
+                setAll(data["all"] === "true");
+                setDanger(data["danger"] === "true");
+                setCaution(data["caution"] === "true");
+            }
         })
     }
 
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
+            <SafeAreaView style={{flex:1,width:"100%",height:"100%"}}>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', paddingTop:80 }}>
                 <Icon name="angle-left" size={28} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
                 <AlarmView>
@@ -72,6 +76,7 @@ function CautionSetting({navigation}) {
                 </AlarmView>
                 <SetBtn onPress={()=>setAsyncStorage()}><Text style={{fontSize:23}}>설정완료</Text></SetBtn>
             </View>
+            </SafeAreaView>
         </LinearGradient>
     )
 }

@@ -15,7 +15,7 @@ function Profile({navigation}) {
     useEffect(() => {
         if(token === "") { autoLogin(); }
         if(token !== "") { loadUserData(); }
-    },[token]);
+    },[token, userInfo]);
 
     const autoLogin = async () => {
 		await AsyncStorage.getItem('loginInfo')
@@ -66,7 +66,7 @@ function Profile({navigation}) {
                         </RowColumn>
                         <RowColumn>
                             <RowTitle>이름</RowTitle>
-                            <RowData>{userInfo.nickname}</RowData>
+                            <RowData>{userInfo.name}</RowData>
                         </RowColumn>
                         <RowColumn>
                             <RowTitle>핸드폰번호</RowTitle>
@@ -74,7 +74,7 @@ function Profile({navigation}) {
                         </RowColumn>
                         <RowColumn>
                             <RowTitle>성별</RowTitle>
-                            <RowData>{userInfo.sex?"남자":"여자"}</RowData>
+                            <RowData>{userInfo.sex === 1?"남자":"여자"}</RowData>
                         </RowColumn>
                         <RowColumn>
                             <RowTitle>체중</RowTitle>
@@ -82,7 +82,7 @@ function Profile({navigation}) {
                         </RowColumn>
                         <RowColumn>
                             <RowTitle>나이</RowTitle>
-                            <RowData>{userInfo.age}</RowData>
+                            <RowData>{userInfo.age+"세"}</RowData>
                         </RowColumn>
                     </View>
                 </View>

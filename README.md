@@ -1,6 +1,5 @@
 # Foot_Care
-* 6/18 마감 스마트인솔 프로젝트
-* 다음생에는 미국에서 태어나 아이폰만 사용하고 싶다
+* 6/18 마감 스마트인솔 프로젝트 (2주연기)
 
 ### NPM STACK
 * react-native-bluetooth-serial-next  (블루투스 연결)
@@ -11,9 +10,7 @@
 * react-native-linear-gradient (그라데이션)
 
 ### To Do List
-* ios 작업 - Mac 기기가없음
-* ~~컴포넌트 정리~~
-* 회원 관리
-* 휴대폰 인증
-* 소셜 로그인
-
+* 반응형 사이즈 조정
+* context API 이용 (device size, theme color, login token)
+* Insole Data Color Palette 범위
+* API JS파일 생성

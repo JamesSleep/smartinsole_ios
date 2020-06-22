@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, AsyncStorage } from 'react-native';
 import styled from 'styled-components';
 import Swiper from 'react-native-swiper';
 import Modal from 'react-native-modal';
 import Calendar from './Calendar';
 import Chart from './Chart';
 import InsoleData from '../Insole/InsoleData';
+import Axios from 'axios';
 
 const WEEK_ENUM = ["첫째주","둘째주","셋째주","넷째주","다섯째주","여섯째주"];
 const FAKE_DB = { 
     left : {temp:[18,25,45,41,42], press:[353, 828, 2120, 2577, 2601, 3082, 3349, 3357, 3494]} , 
     right : {temp:[27,21,32,33,42], press:[157, 230, 1481, 1776, 2213, 2536, 3640, 3756, 4021]} 
 };
+
+const SITE_URL = "http://foot.chaeft.com:8080/api";
+const API = "/user/data";
 
 function Average() {
     const [tab, setTab] = useState(true);
@@ -22,11 +26,12 @@ function Average() {
     const [date, setDate] = useState(new Date().getDate());
     const [week, setWeek] = useState([]);
     const [selectWeek, setSelectWeek] = useState(0);
+    const [insoleData, setInsoleData] = useState({});
     const fill = 'rgb(134, 65, 244)';
     useEffect(() => {
         weekOfMonth();
-    },[]);
-
+        getInsoleData();
+    },[tab,selectWeek]);
     const monthCycle = (mon) => {
         if (mon === 4 || mon === 6 || mon === 9 || mon === 11) return 30;
         else if (mon === 2) { if (year%4 === 0) return 29; else return 28; }
@@ -56,7 +61,39 @@ function Average() {
             }
         }
     }
-
+    const getInsoleData = async () => {
+        await AsyncStorage.getItem('loginInfo')
+		.then(res=>{
+			const data = JSON.parse(res);
+			if(data != null) { loadUserData(data.token); } 
+		})
+    }
+    const loadUserData = async (storageToken) => {
+        let mon = month < 10 ? "0"+month : month ;
+        let s_day, e_day;
+        if(tab) {
+            s_day = "01";
+            e_day = monthCycle(month);
+        } else {
+            s_day = week[selectWeek].firstDay < 10 ? "0"+week[selectWeek].firstDay : week[selectWeek].firstDay;
+            e_day = week[selectWeek].lastDay < 10 ? "0"+week[selectWeek].lastDay : week[selectWeek].lastDay;
+        }
+        const start_date = `${year}-${mon}-${s_day}`;
+        const end_date = `${year}-${mon}-${e_day}`;
+        console.log(start_date);
+        console.log(end_date);
+        await Axios.get(`${SITE_URL}${API}?to=${end_date}&from=${start_date}&token=${storageToken}`)
+        .then(res=>{ 
+			if(res.data.success) {
+                console.log(res.data);
+                setInsoleData(res.data.data[0]);
+			} else {
+				alert("토큰정보가 만료되었습니다");
+			}
+		}).catch(err=>{
+			console.log("err :" + err);
+		});
+	}
     return (
         <View style={{width:"100%",height:"100%", justifyContent:"center",alignItems:"center"}}>
             <View style={{flexDirection:"row",marginTop:70}}>
@@ -96,8 +133,8 @@ function Average() {
                     <Swiper height={280} loop={false} onMomentumScrollEnd={(e, state, context) => {
                         state.index === 1?setSwap(true):setSwap(false);
                     }}>
-                        <FootDataView><InsoleData name={"temp"} data={FAKE_DB}/></FootDataView>
-                        <FootDataView><InsoleData name={"press"} data={FAKE_DB}/></FootDataView>
+                        <FootDataView><InsoleData name={"temp"} data={insoleData}/></FootDataView>
+                        <FootDataView><InsoleData name={"press"} data={insoleData}/></FootDataView>
                     </Swiper>
                     {!tab?
                         <ChartView>

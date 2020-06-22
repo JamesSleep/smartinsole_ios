@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, AsyncStorage, TextInput, Platform } from "react-native";
+import { View, Text, AsyncStorage, TextInput, TouchableWithoutFeedback, Keyboard } from "react-native";
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import IconFA from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/AntDesign';
 import styled from 'styled-components';
 import Axios from 'axios';
 import Modal from 'react-native-modal';
+import { ScrollView } from "react-native-gesture-handler";
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = ["/board/categories?token=","/board/write?token="];
@@ -55,7 +57,10 @@ function ResistEnquiry({navigation}) {
         .then(res=>{
             if(res.data.success) {
                 alert("문의가 완료되었습니다");
-                navigation.navigate('Enquiry');
+                navigation.reset({
+					index:0,
+					routes:[{name:"Enquiry"}]
+				});
             } else {
                 alert(res.data.message);
             }
@@ -64,19 +69,22 @@ function ResistEnquiry({navigation}) {
 
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <SafeAreaView style={{flex:1, width:"100%",height:"100%"}} >
-                <View style={{flex:1 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:30}}>
+                <View style={{flex:2 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:30}}>
+                    <IconFA name="angle-left" style={{position:"absolute",left:20,top:-15,}} size={40} color="#fff" onPress={()=>navigation.goBack()}/>
                     <FakeLogo/>
                 </View>
-                <View style={{flex:4, width:"100%",height:"100%",paddingHorizontal:25, justifyContent:"flex-start",alignItems:"center", paddingBottom:10}} >
+                <View style={{flex:7, width:"100%",height:"100%",paddingHorizontal:25, justifyContent:"flex-start",alignItems:"center", paddingBottom:40}} >
                     <Text style={{width:"90%", color:"white", textAlign:"left", fontSize:20, marginBottom:5}}>문의하기</Text>
                     <EnquiryView>
-                        <View style={{flex:2, paddingHorizontal:"5%", justifyContent:"flex-end"}}>
-                            <View style={{flex:2, justifyContent:"flex-end"}}>
-                                <ColumnTitle>문의유형</ColumnTitle>
-                            </View>
-                            <View style={{flex:1, flexDirection:"row",paddingBottom:10, justifyContent:"space-between", marginTop:12, borderBottomWidth:2, alignItems:"flex-end"}} onTouchEnd={()=>setModalVisible(!modalVisible)}>
-                                <Text>{category}</Text>
+                        <View style={{flex:1,justifyContent:"space-around",borderBottomWidth:2}}>
+                            <ColumnTitle>문의유형</ColumnTitle>
+                            <View 
+                                style={{flexDirection:"row",justifyContent:"space-between"}}
+                                onTouchEnd={()=>setModalVisible(!modalVisible)}
+                            >
+                                <Text style={{fontSize:14}}>{category}</Text>
                                 <Icon name="caretdown" size={14} color="#7f8c8d"/>
                                 <Modal style={{alignItems:"center"}} isVisible={modalVisible} onBackdropPress={()=>setModalVisible(false)}>
                                     <CategoryModal>
@@ -89,16 +97,15 @@ function ResistEnquiry({navigation}) {
                                 </Modal>
                             </View>
                         </View>
-                        <View style={{flex:2, paddingHorizontal:"5%", justifyContent:"flex-end"}}>
-                            <View style={{flex:2, justifyContent:"flex-end",}}>
-                                <ColumnTitle>문의내용</ColumnTitle>
-                            </View>
-                            <View style={{flex:2, marginTop:12, borderBottomWidth:2,}}>
-                                <TextInput onChangeText={text=>setTitle(text)} placeholder="문의글 제목 입력" placeholderTextColor="gray" style={{...Platform.select({android:{height:40}}),fontSize:14,}}/>     
-                            </View>
+                        <View style={{flex:1,justifyContent:"space-around", paddingTop:3, borderBottomWidth:2}}>
+                            <ColumnTitle>문의내용</ColumnTitle>
+                            <TextInput onChangeText={text=>setTitle(text)} textAlign="left" placeholder="문의글 제목 입력" placeholderTextColor="gray" style={{fontSize:14,}}/>
                         </View>
-                        <View style={{flex:4, paddingHorizontal:"5%"}}>
-                            <TextInput onChangeText={text=>{setContent(text),setTextLength(text.length)}} multiline={true} blurOnSubmit={true} style={{height:"80%", fontSize:15}}/>
+                        <View style={{flex:3}}>
+                            <TextInput onChangeText={text=>{setContent(text),setTextLength(text.length)}} 
+                                multiline={true} blurOnSubmit={true} style={{height:"80%", fontSize:14}}
+                                textAlignVertical="top"
+                            />
                             <View style={{ marginTop:12, borderTopWidth:2}}>
                                 <Text style={{fontSize:12}}>{`${textLength}/200자`}</Text>
                             </View>    
@@ -109,6 +116,7 @@ function ResistEnquiry({navigation}) {
                     </ResistBtn>
                 </View>
             </SafeAreaView>
+            </TouchableWithoutFeedback>
         </LinearGradient>
     )
 }
@@ -122,7 +130,7 @@ const FakeLogo = styled.View`
 const EnquiryView = styled.View`
     width : 100%;
     height : 70%;
-    padding : 20px 20px;
+    padding : 15px 30px;
     margin-bottom : 20px;
     border-radius : 20px;
     background-color : white;
@@ -135,7 +143,7 @@ const ResistBtn = styled.TouchableOpacity`
     border-radius : 30px;
 `;
 const ColumnTitle = styled.Text`
-    font-size : 14px;
+    font-size : 12px;
 `;
 const CategoryModal = styled.View`
     width : 90%;

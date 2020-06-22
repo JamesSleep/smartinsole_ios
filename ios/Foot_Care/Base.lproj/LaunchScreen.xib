@@ -14,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FootCare.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-kM-Nwb">
-                    <rect key="frame" x="-11" y="-226" width="502" height="1388"/>
+                    <rect key="frame" x="-11" y="-226" width="525" height="1388"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
             </subviews>
