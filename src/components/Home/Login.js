@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  View , Text , AsyncStorage, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import {  View , Text , AsyncStorage, TouchableWithoutFeedback, Keyboard, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
@@ -7,6 +7,9 @@ import Axios from 'axios';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/auth/signin";
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function Login({navigation}) {
 	const [email, setEmail] = useState("");
@@ -48,8 +51,8 @@ function Login({navigation}) {
 						<InputData onChangeText={text=>setPW(text)} secureTextEntry placeholder="비밀번호" placeholderTextColor="gray"/>
 						<CustomBtn onPress={()=>post()}><LoginText>로그인</LoginText></CustomBtn>
 						<View style={{width:"80%", flexDirection:"row", justifyContent:"space-around"}}>
-							<Text onPress={()=>navigation.navigate('FinderID')} style={{color:"black", opacity: 0.7}}>ID(이메일)찾기</Text>
-							<Text onPress={()=>navigation.navigate('FinderPW')} style={{color:"black", opacity: 0.7}}>비밀번호찾기</Text>
+							<Text onPress={()=>navigation.navigate('FinderID')} style={{fontSize:_WIDTH/32, color:"black", opacity: 0.7}}>ID(이메일)찾기</Text>
+							<Text onPress={()=>navigation.navigate('FinderPW')} style={{fontSize:_WIDTH/32, color:"black", opacity: 0.7}}>비밀번호찾기</Text>
 						</View>
 					</LoginCard>
 				</View>
@@ -59,35 +62,35 @@ function Login({navigation}) {
 }
 
 const FakeLogo = styled.View`
-	width : 130px;
-	height : 130px;
+	width : ${_WIDTH/4}px;
+	height : ${_WIDTH/4}px;
 	background-color : white;
-	border-radius : 25px;
+	border-radius : ${_HEIGHT/25}px;
 `;
 
 const LoginCard = styled.View`
-	margin-top : 100px;
-	padding : 20px 40px 30px 40px;
+	margin-top : ${_HEIGHT/7}px;
+	padding : 5% 7% 3% 7%;
 	width : 90%;
-	height : 300px;
+	height : ${_HEIGHT*0.4}px;
 	background-color : white;
-	border-radius : 25px;
+	border-radius : ${_HEIGHT/25}px;
 	align-items : center;
 `;
 const InputData = styled.TextInput`
 	color : black;
 	margin-top : 10px;
 	width : 90%;
-	height : 50px;
+	height : ${_HEIGHT/13}px;
     border-bottom-width : 1px;
 	border-bottom-color : black;
-	font-size : 15px;
+	font-size : ${_WIDTH/28}px;
 `;
 const CustomBtn = styled.TouchableOpacity`
-	margin-top : 30px;
+	margin-top : ${_HEIGHT/30}px;
 	margin-bottom : 10px;
     width : 100%;
-    height : 60px;
+    height : ${_HEIGHT/14}px;
     background-color : #4F92E0;
 	justify-content : center;
 	border-radius : 30px;
@@ -95,7 +98,7 @@ const CustomBtn = styled.TouchableOpacity`
 const LoginText = styled.Text`
 	text-align : center;
 	color : white;
-	font-size : 23px;
+	font-size : ${_WIDTH/20}px;
 `;
 
 

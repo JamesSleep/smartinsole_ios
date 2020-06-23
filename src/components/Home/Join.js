@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, AsyncStorage } from 'react-native'
+import { View, Text, AsyncStorage, Dimensions } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import Axios from 'axios';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const JOIN_API = "/auth/signup";
@@ -179,9 +182,9 @@ return (
     <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
       <SafeAreaView style={{flex:1}}>
         <View style={{flexDirection:"row", justifyContent:"center",alignItems:"center", height:80}}>
-          <Icon name="angle-left" size={40} color="#fff" style={{position:"absolute",left:20}}
+          <Icon name="angle-left" size={_HEIGHT/20} color="#fff" style={{position:"absolute",left:20}}
               onPress={()=>navigation.goBack()}/>
-          <Text style={{fontSize:20, color:"#fff", fontWeight:"bold"}}>회원가입하기</Text>
+          <Text style={{fontSize:_WIDTH/20, color:"#fff", fontWeight:"bold"}}>회원가입하기</Text>
         </View>
         <Form>
           <MemberInfo>
@@ -208,7 +211,7 @@ return (
                     onChangeText={text=>setPassword(text)}
                 />
                 {checkInput("password")}
-                <Text style={{opacity:0.4, position:"absolute", right:0, bottom:-20}}>숫자&영문 6-20자</Text>
+                <Text style={{fontSize:_WIDTH/30, opacity:0.4, position:"absolute", right:0, bottom:-20}}>숫자&영문 6-20자</Text>
               </InfoColumn>
                 <InfoColumn>
                   <InfoTitle>이름</InfoTitle>
@@ -235,7 +238,7 @@ return (
                     <RowView>
                         <InputData placeholder="인증번호를 입력해주세요" placeholderTextColor="gray"></InputData>
                         <CustomBtn>
-                            <Text style={{color:"white",fontSize:13, textAlign:"center"}}>인증하기</Text>
+                            <Text style={{color:"white",fontSize:_WIDTH/28, textAlign:"center"}}>인증하기</Text>
                         </CustomBtn>
                     </RowView>
                 </InfoColumn>
@@ -272,38 +275,38 @@ return (
                 <RowView>
                     <CheckBox>
                         {isCheck[1]?
-                        <Icon name="check-square-o" size={23} onPress={()=>setCheck({...isCheck, 1:false})}/>
-                        :<Icon name="square-o" size={23} onPress={()=>setCheck({...isCheck, 1:true})}/>}
+                        <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 1:false})}/>
+                        :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 1:true})}/>}
                     </CheckBox>
-                    <Text style={{color:"#4834d4"}}>생체 데이터 전송 동의(필수)</Text>
+                    <Text style={{fontSize:_WIDTH/35, color:"#4834d4"}}>생체 데이터 전송 동의(필수)</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
                         {isCheck[2]?
-                        <Icon name="check-square-o" size={23} onPress={()=>setCheck({...isCheck, 2:false})}/>
-                        :<Icon name="square-o" size={23} onPress={()=>setCheck({...isCheck, 2:true})}/>}
+                        <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 2:false})}/>
+                        :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 2:true})}/>}
                     </CheckBox>
-                    <Text style={{color:"#4834d4"}}>개인정보 수집 및 이용동의(필수)</Text>
+                    <Text style={{fontSize:_WIDTH/35,color:"#4834d4"}}>개인정보 수집 및 이용동의(필수)</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
                         {isCheck[3]?
-                        <Icon name="check-square-o" size={23} onPress={()=>setCheck({...isCheck, 3:false})}/>
-                        :<Icon name="square-o" size={23} onPress={()=>setCheck({...isCheck, 3:true})}/>}
+                        <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 3:false})}/>
+                        :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 3:true})}/>}
                     </CheckBox>
-                    <Text>이용약관 동의</Text>
+                    <Text style={{fontSize:_WIDTH/35}}>이용약관 동의</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
                         {isCheck[4]?
-                        <Icon name="check-square-o" size={23} onPress={()=>setCheck({...isCheck, 4:false})}/>
-                        :<Icon name="square-o" size={23} onPress={()=>setCheck({...isCheck, 4:true})}/>}
+                        <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 4:false})}/>
+                        :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 4:true})}/>}
                     </CheckBox>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    <Text>개인정보 취급 위탁 동의</Text>
+                    <Text style={{fontSize:_WIDTH/35}}>개인정보 취급 위탁 동의</Text>
                 </RowView>
             </AgreeForm>
             <View style={{alignItems:"center", marginVertical:20}}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                <PostBtn onPress={()=>post()}><Text style={{textAlign:"center", fontSize: 20}}>다음</Text></PostBtn>
+                <PostBtn onPress={()=>post()}><Text style={{textAlign:"center", fontSize: _WIDTH/20}}>다음</Text></PostBtn>
             </View>
         </Form>
         </SafeAreaView>
@@ -326,14 +329,14 @@ const InfoColumn = styled.View`
     margin-bottom : 20px;
 `;
 const InfoTitle = styled.Text`
-    font-size : 18px;
+    font-size : ${_WIDTH/25}px;
     font-weight : bold;
 `;
 const InputData = styled.TextInput`
     width : 100%;
     height : 40px;
     color : black;
-    font-size : 15px;
+    font-size : ${_WIDTH/32}px;
     border-bottom-width : 1px;
     border-bottom-color : black;
 `;
@@ -350,12 +353,12 @@ const SegmentView = styled.View`
 `;
 const BtnText = styled.Text`
     color : white;
-    font-size : 14px;
+    font-size : ${_WIDTH/32}px;
     text-align : center;
 `;
 const CustomBtn = styled.TouchableOpacity`
-    width : 90px;
-    height : 40px;
+    width : ${_WIDTH/5}px;
+    height : ${_HEIGHT/16}px;
     position : absolute;
     right : 0;
     bottom : 0;
@@ -364,7 +367,7 @@ const CustomBtn = styled.TouchableOpacity`
 `;
 const SegBtnAct = styled.TouchableOpacity`
     width : 42%;
-    height : 60px;
+    height : ${_HEIGHT/13}px;
     margin : 10px 1px 0px 1px;
     background-color : #fff;
     justify-content : center;
@@ -372,7 +375,7 @@ const SegBtnAct = styled.TouchableOpacity`
 `;
 const SegBtnNoneAct = styled.TouchableOpacity`
     width : 42%;
-    height : 60px;
+    height : ${_HEIGHT/13}px;
     margin : 10px 1px 0px 1px;
     background-color : #fff;
     justify-content : center;
@@ -380,17 +383,17 @@ const SegBtnNoneAct = styled.TouchableOpacity`
 `;
 const SegText = styled.Text`
     color : black;
-    font-size : 20px;
+    font-size : ${_WIDTH/25}px;
     text-align : center;
 `;
 const SegTextNoneAct = styled.Text`
     color : #dcdde1;
-    font-size : 20px;
+    font-size : ${_WIDTH/25}px;
     text-align : center;
 `;
 const PostBtn = styled.TouchableOpacity`
     width : 80%;
-    height : 60px;
+    height : ${_HEIGHT/15}px;
     margin : 10px 1px 0px 1px;
     background-color : #fff;
     justify-content : center;
@@ -398,10 +401,10 @@ const PostBtn = styled.TouchableOpacity`
 `;
 const ErrorMsg = styled.Text`
     color : red;
-    font-size : 12px;
+    font-size : ${_WIDTH/35}px;
 `;
 const CheckBox = styled.TouchableOpacity`
-    width : 20px;
+    width : ${_WIDTH/24}px;
     margin-right : 10px;
 `;
 export default Join;

@@ -1,449 +1,455 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-MERGED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:react-native-radial-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-radial-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fa9d249d56579007dba70f8ee4dd5b3f/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/5a1065d4748ae359265a740b2069d44b/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2c67e628ec5e10a6dc480e38352e91b8/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-31:12
-MERGED from [:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
-MERGED from [:react-native-community_masked-view] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_picker] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-31:12
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-gesture-handler] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-permissions] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-reanimated] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-splash-screen] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-vector-icons] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/cd10b943675bdb4155d7b180434bb88b/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-linear-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/14649b8b71802f359f24d4f29dd55d6b/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/83ef104dfb430f397d92e4759e916162/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8547c58d8a189afcab5540191afe7320/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee0a0f1df6ec82b39c6bd94672681bab/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fbdc3e33c0cf4fb6618b3fcc8d105591/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c3b7b12f448628b281d0d62b884cad68/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3b198830d922c7c36b5728d232b5dfa2/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8b504391aa72c1fccbfde5f9aecf364d/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.kakao.sdk:usermgmt:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7dc1183bebf165fb20a5935734e558d/usermgmt-1.27.0/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/edab9a506dbd8c78a6f1a18fc4eb209e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3e974e7e51555c82be5b9fd468966b2b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:2:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/33fa28bb10cd4d05c9c7b76910e2f1d7/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/57896e3f8d3af1ea30640dfb96021293/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/420bad76d144494602cd19d31fe9bd87/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3d8e4bc7a6af7aacf11542b377d7496f/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b95a670ae7bd376b7902e15855cd0ee3/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b3384283a73b276daf1e9a12cf250bb7/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/90a42a2ce697149cad235e929844c219/activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/24d6d583c434259890735095825ff497/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/f1fdfdf03c30563a3eb92f6c5b5051ce/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a25b01144be0941df6bba7293d8c0f17/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/e9872f4e302f432d4ed640cfa6c58eb6/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a20a73fc01b18d3fde5e258f4cd5ad79/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:2:1-16:12
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:2:1-18:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/411bdbedc35f51d8e6b1c352c69abc9b/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/9aab56159b5d892e0145587101b1f3a4/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/97914c6c2bf3a10c0dbc0cbbac018fe9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/d3986420b69bbcda2a26da93e8786bb5/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7d3a1583ae97d0e70a1770a1993bbf1/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/21edf3c6b4f2eecf7b9eccd8e17daad5/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b9668bd4c5473f0298eda6562aec7b99/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/596fc679c0cd5d4e81c0bb73a34a2445/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.kakao.sdk:network:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/be9ca54714fc9f9a13684e19f1151fca/network-1.27.0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:common:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/6a4d61b8df05afc2c5d51dc9e03b8b9e/common-1.27.0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/562a4d899b3a7a711a398f7636c8c187/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ff6a80826912865da6a820edeab44618/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c7a6d368d73eb031ed83c37cb277d123/jetified-proguard-rules-1.3.3.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.kakao.sdk:util:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ebfbf37ba992c715766c579df80158ba/util-1.27.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-radial-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-radial-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fa9d249d56579007dba70f8ee4dd5b3f\flipper-network-plugin-0.33.1\AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5a1065d4748ae359265a740b2069d44b\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:8:1-15:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2c67e628ec5e10a6dc480e38352e91b8\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-31:12
+MERGED from [:react-native-fs] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-community_masked-view] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_picker] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-31:12
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-gesture-handler] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-permissions] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-reanimated] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-splash-screen] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-vector-icons] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ce690d06fffedba92e2bd8bc2fe68a9b\jetified-react-native-0.62.2\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\055a171d10c43231a2795117ecd4c3fd\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\1ed26cdc1f47a6754ce1546799dd43a1\android-jsc-r245459\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c180792e3f393fe4453d9c695595b3ef\flipper-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\14649b8b71802f359f24d4f29dd55d6b\stetho-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\83ef104dfb430f397d92e4759e916162\fresco-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8547c58d8a189afcab5540191afe7320\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee0a0f1df6ec82b39c6bd94672681bab\drawee-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fbdc3e33c0cf4fb6618b3fcc8d105591\nativeimagefilters-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c3b7b12f448628b281d0d62b884cad68\imagepipeline-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3b198830d922c7c36b5728d232b5dfa2\nativeimagetranscoder-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8b504391aa72c1fccbfde5f9aecf364d\imagepipeline-base-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a682a4f61b53a5eb0b34ff17728f4b20\soloader-0.8.2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\7b4521e09033db39989053c4a0984cc2\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2b7e6ebaa515cd43f42fb356f0d1941c\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.kakao.sdk:usermgmt:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7dc1183bebf165fb20a5935734e558d\usermgmt-1.27.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3eb43dcc83336306d77ef63b3402a327\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\edab9a506dbd8c78a6f1a18fc4eb209e\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3e974e7e51555c82be5b9fd468966b2b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\33fa28bb10cd4d05c9c7b76910e2f1d7\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\57896e3f8d3af1ea30640dfb96021293\fragment-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\420bad76d144494602cd19d31fe9bd87\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3d8e4bc7a6af7aacf11542b377d7496f\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b95a670ae7bd376b7902e15855cd0ee3\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b3384283a73b276daf1e9a12cf250bb7\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\90a42a2ce697149cad235e929844c219\activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\24d6d583c434259890735095825ff497\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\f1fdfdf03c30563a3eb92f6c5b5051ce\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a25b01144be0941df6bba7293d8c0f17\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e9872f4e302f432d4ed640cfa6c58eb6\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a20a73fc01b18d3fde5e258f4cd5ad79\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:2:1-16:12
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:2:1-18:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee4a69f4f726969bc5c4f11a1f23bd91\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\411bdbedc35f51d8e6b1c352c69abc9b\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\9aab56159b5d892e0145587101b1f3a4\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\97914c6c2bf3a10c0dbc0cbbac018fe9\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\d3986420b69bbcda2a26da93e8786bb5\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7d3a1583ae97d0e70a1770a1993bbf1\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\21edf3c6b4f2eecf7b9eccd8e17daad5\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b9668bd4c5473f0298eda6562aec7b99\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\596fc679c0cd5d4e81c0bb73a34a2445\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.kakao.sdk:network:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\be9ca54714fc9f9a13684e19f1151fca\network-1.27.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:common:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\6a4d61b8df05afc2c5d51dc9e03b8b9e\common-1.27.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\562a4d899b3a7a711a398f7636c8c187\annotation-0.8.2\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5433601619d24b3dc86912e080d05a5d\jetified-fbcore-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\46a79db8d36b0563e397aa54f72c8a10\jetified-proguard-rules-1.3.3.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.kakao.sdk:util:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ebfbf37ba992c715766c579df80158ba\util-1.27.0\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:2:3-26
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:2:3-26
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:2:3-26
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:2:3-26
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:1-30:12
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:15:5-67
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:5:5-68
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:11:5-68
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:11:5-68
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:11:5-68
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:11:5-68
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:5:5-68
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:11:5-68
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:5:22-65
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:5:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:6:5-74
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:12:5-74
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:12:5-74
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:12:5-74
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:12:5-74
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:6:5-74
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-74
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-74
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-74
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-74
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:12:5-74
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:6:22-71
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:6:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:7:5-81
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:7:5-81
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:7:22-78
-application
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:9:5-28:19
-MERGED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:9:5-28:19
-MERGED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:9:5-28:19
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-29:19
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-29:19
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-29:19
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-29:19
-MERGED from [:react-native-splash-screen] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-splash-screen] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/cd10b943675bdb4155d7b180434bb88b/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/cd10b943675bdb4155d7b180434bb88b/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:11:5-20:19
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:11:5-20:19
-MERGED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:16:5-53
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:16:5-53
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/562a4d899b3a7a711a398f7636c8c187/annotation-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/562a4d899b3a7a711a398f7636c8c187/annotation-0.8.2/AndroidManifest.xml:11:5-20
-	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:18-86
-	android:supportsRtl
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
-	android:label
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:11:7-39
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:11:7-39
-	tools:ignore
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:7:75-114
-	android:roundIcon
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:13:7-52
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:13:7-52
-	tools:targetApi
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:7:54-74
-	android:icon
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:12:7-41
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:12:7-41
-	android:allowBackup
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:14:7-33
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:14:7-33
-	android:theme
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:15:7-38
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:15:7-38
-	android:usesCleartextTraffic
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:7:18-53
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission-sdk-23#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:8:5-85
 	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:10:7-38
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:10:7-38
-activity#com.foot_care.MainActivity
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:16:7-26:18
-	android:label
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:18:9-41
-	android:launchMode
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:20:9-40
-	android:windowSoftInputMode
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:21:9-48
-	android:configChanges
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:19:9-86
-	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:17:9-37
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:22:9-25:25
-action#android.intent.action.MAIN
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:23:13-65
-	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:23:21-62
-category#android.intent.category.LAUNCHER
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:24:13-73
-	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:24:23-70
-activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:27:7-84
-	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml:27:17-81
-uses-sdk
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-bluetooth-serial-next] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-bluetooth-serial-next/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-radial-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-radial-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-radial-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-radial-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fa9d249d56579007dba70f8ee4dd5b3f/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fa9d249d56579007dba70f8ee4dd5b3f/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/5a1065d4748ae359265a740b2069d44b/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/5a1065d4748ae359265a740b2069d44b/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2c67e628ec5e10a6dc480e38352e91b8/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2c67e628ec5e10a6dc480e38352e91b8/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_masked-view] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_picker] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_picker] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-community/picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-ble-plx] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-permissions] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-permissions] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-splash-screen] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-splash-screen] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/cd10b943675bdb4155d7b180434bb88b/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/cd10b943675bdb4155d7b180434bb88b/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [org.webkit:android-jsc:r245459] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/14649b8b71802f359f24d4f29dd55d6b/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/14649b8b71802f359f24d4f29dd55d6b/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/83ef104dfb430f397d92e4759e916162/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/83ef104dfb430f397d92e4759e916162/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8547c58d8a189afcab5540191afe7320/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8547c58d8a189afcab5540191afe7320/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee0a0f1df6ec82b39c6bd94672681bab/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee0a0f1df6ec82b39c6bd94672681bab/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fbdc3e33c0cf4fb6618b3fcc8d105591/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/fbdc3e33c0cf4fb6618b3fcc8d105591/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c3b7b12f448628b281d0d62b884cad68/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c3b7b12f448628b281d0d62b884cad68/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3b198830d922c7c36b5728d232b5dfa2/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3b198830d922c7c36b5728d232b5dfa2/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8b504391aa72c1fccbfde5f9aecf364d/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/8b504391aa72c1fccbfde5f9aecf364d/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.kakao.sdk:usermgmt:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7dc1183bebf165fb20a5935734e558d/usermgmt-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:usermgmt:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7dc1183bebf165fb20a5935734e558d/usermgmt-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/edab9a506dbd8c78a6f1a18fc4eb209e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/edab9a506dbd8c78a6f1a18fc4eb209e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3e974e7e51555c82be5b9fd468966b2b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3e974e7e51555c82be5b9fd468966b2b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/33fa28bb10cd4d05c9c7b76910e2f1d7/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/33fa28bb10cd4d05c9c7b76910e2f1d7/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/57896e3f8d3af1ea30640dfb96021293/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/57896e3f8d3af1ea30640dfb96021293/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/420bad76d144494602cd19d31fe9bd87/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/420bad76d144494602cd19d31fe9bd87/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3d8e4bc7a6af7aacf11542b377d7496f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/3d8e4bc7a6af7aacf11542b377d7496f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b95a670ae7bd376b7902e15855cd0ee3/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b95a670ae7bd376b7902e15855cd0ee3/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b3384283a73b276daf1e9a12cf250bb7/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b3384283a73b276daf1e9a12cf250bb7/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/90a42a2ce697149cad235e929844c219/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/90a42a2ce697149cad235e929844c219/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/24d6d583c434259890735095825ff497/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/24d6d583c434259890735095825ff497/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/f1fdfdf03c30563a3eb92f6c5b5051ce/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/f1fdfdf03c30563a3eb92f6c5b5051ce/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a25b01144be0941df6bba7293d8c0f17/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a25b01144be0941df6bba7293d8c0f17/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/e9872f4e302f432d4ed640cfa6c58eb6/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/e9872f4e302f432d4ed640cfa6c58eb6/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a20a73fc01b18d3fde5e258f4cd5ad79/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/a20a73fc01b18d3fde5e258f4cd5ad79/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/411bdbedc35f51d8e6b1c352c69abc9b/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/411bdbedc35f51d8e6b1c352c69abc9b/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/9aab56159b5d892e0145587101b1f3a4/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/9aab56159b5d892e0145587101b1f3a4/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/97914c6c2bf3a10c0dbc0cbbac018fe9/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/97914c6c2bf3a10c0dbc0cbbac018fe9/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/d3986420b69bbcda2a26da93e8786bb5/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/d3986420b69bbcda2a26da93e8786bb5/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7d3a1583ae97d0e70a1770a1993bbf1/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b7d3a1583ae97d0e70a1770a1993bbf1/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/21edf3c6b4f2eecf7b9eccd8e17daad5/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/21edf3c6b4f2eecf7b9eccd8e17daad5/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b9668bd4c5473f0298eda6562aec7b99/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/b9668bd4c5473f0298eda6562aec7b99/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/596fc679c0cd5d4e81c0bb73a34a2445/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/596fc679c0cd5d4e81c0bb73a34a2445/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.kakao.sdk:network:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/be9ca54714fc9f9a13684e19f1151fca/network-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:network:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/be9ca54714fc9f9a13684e19f1151fca/network-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/6a4d61b8df05afc2c5d51dc9e03b8b9e/common-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/6a4d61b8df05afc2c5d51dc9e03b8b9e/common-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/562a4d899b3a7a711a398f7636c8c187/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/562a4d899b3a7a711a398f7636c8c187/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ff6a80826912865da6a820edeab44618/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ff6a80826912865da6a820edeab44618/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c7a6d368d73eb031ed83c37cb277d123/jetified-proguard-rules-1.3.3.0/AndroidManifest.xml:8:5-43
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/c7a6d368d73eb031ed83c37cb277d123/jetified-proguard-rules-1.3.3.0/AndroidManifest.xml:8:5-43
-MERGED from [com.kakao.sdk:util:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ebfbf37ba992c715766c579df80158ba/util-1.27.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:util:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/ebfbf37ba992c715766c579df80158ba/util-1.27.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:5:5-77
-	android:name
-		ADDED from /Users/jamessleep/Documents/smartinsole_ios/android/app/src/debug/AndroidManifest.xml:5:22-75
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-	android:name
-		ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/dea517006ff4571144d9dc59242f5c20/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
-meta-data#com.kakao.sdk.AppKey
-ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
-	android:value
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-50
-	android:name
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
-activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
-ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:20
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:20
-MERGED from [:react-native-seoul_kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:20
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:12:9-19:20
-MERGED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:12:9-19:20
-	android:label
-		ADDED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:16:13-59
-	android:launchMode
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-43
-	android:windowSoftInputMode
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-55
-	android:exported
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
-	android:configChanges
-		ADDED from [com.kakao.sdk:auth:1.27.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/05eb19436a7c567fced2eebca4dd3791/auth-1.27.0/AndroidManifest.xml:14:13-59
-	android:name
-		ADDED from [:react-native-seoul-kakao-login] /Users/jamessleep/Documents/smartinsole_ios/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
-	android:name
-		ADDED from [:react-native-fs] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:8:29-83
 uses-feature#android.hardware.bluetooth_le
-ADDED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:9:5-89
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:36
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:36
 	android:required
-		ADDED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:9:64-87
 	android:name
-		ADDED from [:react-native-ble-manager] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-53
-provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
-	android:grantUriPermissions
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
-	android:authorities
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:9:19-63
+application
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:11:5-30:19
+MERGED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:11:5-30:19
+MERGED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:11:5-30:19
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-29:19
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-29:19
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-29:19
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-29:19
+MERGED from [:react-native-splash-screen] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-splash-screen] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ce690d06fffedba92e2bd8bc2fe68a9b\jetified-react-native-0.62.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ce690d06fffedba92e2bd8bc2fe68a9b\jetified-react-native-0.62.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a682a4f61b53a5eb0b34ff17728f4b20\soloader-0.8.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a682a4f61b53a5eb0b34ff17728f4b20\soloader-0.8.2\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\7b4521e09033db39989053c4a0984cc2\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\7b4521e09033db39989053c4a0984cc2\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:11:5-20:19
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:11:5-20:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:16:5-53
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:16:5-53
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee4a69f4f726969bc5c4f11a1f23bd91\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee4a69f4f726969bc5c4f11a1f23bd91\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\562a4d899b3a7a711a398f7636c8c187\annotation-0.8.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\562a4d899b3a7a711a398f7636c8c187\annotation-0.8.2\AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:13:7-39
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:13:7-39
+	tools:ignore
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:15:7-52
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:15:7-52
+	tools:targetApi
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:14:7-41
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:16:7-33
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:16:7-33
+	android:theme
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:17:7-38
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:17:7-38
+	android:usesCleartextTraffic
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:12:7-38
+activity#com.foot_care.MainActivity
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:18:7-28:18
+	android:label
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:20:9-41
+	android:launchMode
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:22:9-40
+	android:windowSoftInputMode
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:23:9-48
+	android:configChanges
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:21:9-86
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:19:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:24:9-27:25
+action#android.intent.action.MAIN
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:25:13-65
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:25:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:26:13-73
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:26:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:29:7-84
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml:29:17-81
+uses-sdk
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-bluetooth-serial-next] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-radial-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-radial-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-radial-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-radial-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fa9d249d56579007dba70f8ee4dd5b3f\flipper-network-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fa9d249d56579007dba70f8ee4dd5b3f\flipper-network-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5a1065d4748ae359265a740b2069d44b\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5a1065d4748ae359265a740b2069d44b\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2c67e628ec5e10a6dc480e38352e91b8\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2c67e628ec5e10a6dc480e38352e91b8\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fs] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fs] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_masked-view] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_picker] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_picker] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-community\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-ble-manager] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-manager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-ble-plx] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-ble-plx\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-permissions] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-splash-screen\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ce690d06fffedba92e2bd8bc2fe68a9b\jetified-react-native-0.62.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ce690d06fffedba92e2bd8bc2fe68a9b\jetified-react-native-0.62.2\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\055a171d10c43231a2795117ecd4c3fd\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\055a171d10c43231a2795117ecd4c3fd\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\1ed26cdc1f47a6754ce1546799dd43a1\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\1ed26cdc1f47a6754ce1546799dd43a1\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c180792e3f393fe4453d9c695595b3ef\flipper-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c180792e3f393fe4453d9c695595b3ef\flipper-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\14649b8b71802f359f24d4f29dd55d6b\stetho-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\14649b8b71802f359f24d4f29dd55d6b\stetho-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\83ef104dfb430f397d92e4759e916162\fresco-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\83ef104dfb430f397d92e4759e916162\fresco-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8547c58d8a189afcab5540191afe7320\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8547c58d8a189afcab5540191afe7320\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee0a0f1df6ec82b39c6bd94672681bab\drawee-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee0a0f1df6ec82b39c6bd94672681bab\drawee-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fbdc3e33c0cf4fb6618b3fcc8d105591\nativeimagefilters-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\fbdc3e33c0cf4fb6618b3fcc8d105591\nativeimagefilters-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c3b7b12f448628b281d0d62b884cad68\imagepipeline-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\c3b7b12f448628b281d0d62b884cad68\imagepipeline-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3b198830d922c7c36b5728d232b5dfa2\nativeimagetranscoder-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3b198830d922c7c36b5728d232b5dfa2\nativeimagetranscoder-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8b504391aa72c1fccbfde5f9aecf364d\imagepipeline-base-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8b504391aa72c1fccbfde5f9aecf364d\imagepipeline-base-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a682a4f61b53a5eb0b34ff17728f4b20\soloader-0.8.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a682a4f61b53a5eb0b34ff17728f4b20\soloader-0.8.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\7b4521e09033db39989053c4a0984cc2\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\7b4521e09033db39989053c4a0984cc2\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2b7e6ebaa515cd43f42fb356f0d1941c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\2b7e6ebaa515cd43f42fb356f0d1941c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.kakao.sdk:usermgmt:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7dc1183bebf165fb20a5935734e558d\usermgmt-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:usermgmt:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7dc1183bebf165fb20a5935734e558d\usermgmt-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3eb43dcc83336306d77ef63b3402a327\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3eb43dcc83336306d77ef63b3402a327\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\edab9a506dbd8c78a6f1a18fc4eb209e\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\edab9a506dbd8c78a6f1a18fc4eb209e\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3e974e7e51555c82be5b9fd468966b2b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3e974e7e51555c82be5b9fd468966b2b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\33fa28bb10cd4d05c9c7b76910e2f1d7\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\33fa28bb10cd4d05c9c7b76910e2f1d7\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\57896e3f8d3af1ea30640dfb96021293\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\57896e3f8d3af1ea30640dfb96021293\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\420bad76d144494602cd19d31fe9bd87\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\420bad76d144494602cd19d31fe9bd87\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3d8e4bc7a6af7aacf11542b377d7496f\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\3d8e4bc7a6af7aacf11542b377d7496f\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b95a670ae7bd376b7902e15855cd0ee3\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b95a670ae7bd376b7902e15855cd0ee3\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b3384283a73b276daf1e9a12cf250bb7\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b3384283a73b276daf1e9a12cf250bb7\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\90a42a2ce697149cad235e929844c219\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\90a42a2ce697149cad235e929844c219\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\24d6d583c434259890735095825ff497\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\24d6d583c434259890735095825ff497\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\f1fdfdf03c30563a3eb92f6c5b5051ce\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\f1fdfdf03c30563a3eb92f6c5b5051ce\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a25b01144be0941df6bba7293d8c0f17\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a25b01144be0941df6bba7293d8c0f17\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e9872f4e302f432d4ed640cfa6c58eb6\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e9872f4e302f432d4ed640cfa6c58eb6\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4f509a65121478d6153615d7ef5b7c5f\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a20a73fc01b18d3fde5e258f4cd5ad79\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\a20a73fc01b18d3fde5e258f4cd5ad79\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee4a69f4f726969bc5c4f11a1f23bd91\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ee4a69f4f726969bc5c4f11a1f23bd91\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\411bdbedc35f51d8e6b1c352c69abc9b\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\411bdbedc35f51d8e6b1c352c69abc9b\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\9aab56159b5d892e0145587101b1f3a4\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\9aab56159b5d892e0145587101b1f3a4\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\97914c6c2bf3a10c0dbc0cbbac018fe9\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\97914c6c2bf3a10c0dbc0cbbac018fe9\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\d3986420b69bbcda2a26da93e8786bb5\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\d3986420b69bbcda2a26da93e8786bb5\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7d3a1583ae97d0e70a1770a1993bbf1\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b7d3a1583ae97d0e70a1770a1993bbf1\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\21edf3c6b4f2eecf7b9eccd8e17daad5\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\21edf3c6b4f2eecf7b9eccd8e17daad5\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b9668bd4c5473f0298eda6562aec7b99\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\b9668bd4c5473f0298eda6562aec7b99\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\596fc679c0cd5d4e81c0bb73a34a2445\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\596fc679c0cd5d4e81c0bb73a34a2445\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.kakao.sdk:network:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\be9ca54714fc9f9a13684e19f1151fca\network-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:network:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\be9ca54714fc9f9a13684e19f1151fca\network-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\6a4d61b8df05afc2c5d51dc9e03b8b9e\common-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\6a4d61b8df05afc2c5d51dc9e03b8b9e\common-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\562a4d899b3a7a711a398f7636c8c187\annotation-0.8.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\562a4d899b3a7a711a398f7636c8c187\annotation-0.8.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5433601619d24b3dc86912e080d05a5d\jetified-fbcore-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\5433601619d24b3dc86912e080d05a5d\jetified-fbcore-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\46a79db8d36b0563e397aa54f72c8a10\jetified-proguard-rules-1.3.3.0\AndroidManifest.xml:8:5-43
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\46a79db8d36b0563e397aa54f72c8a10\jetified-proguard-rules-1.3.3.0\AndroidManifest.xml:8:5-43
+MERGED from [com.kakao.sdk:util:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ebfbf37ba992c715766c579df80158ba\util-1.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:util:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\ebfbf37ba992c715766c579df80158ba\util-1.27.0\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\src\debug\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from [com.facebook.flipper:flipper:0.33.1] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\e01c74aac9496edb9e309db580d4781a\jetified-flipper-0.33.1\AndroidManifest.xml:16:22-73
+meta-data#com.kakao.sdk.AppKey
+ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:53
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:53
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:53
+	android:value
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-50
+	android:name
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-48
+activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
+ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:20
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:20
+MERGED from [:react-native-seoul_kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:20
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:12:9-19:20
+MERGED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:12:9-19:20
+	android:label
+		ADDED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:16:13-59
+	android:launchMode
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-43
+	android:windowSoftInputMode
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-55
 	android:exported
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
+	android:configChanges
+		ADDED from [com.kakao.sdk:auth:1.27.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\05eb19436a7c567fced2eebca4dd3791\auth-1.27.0\AndroidManifest.xml:14:13-59
 	android:name
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+		ADDED from [:react-native-seoul-kakao-login] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\@react-native-seoul\kakao-login\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-fs] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:react-native-fs] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-78
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
 	android:resource
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
 	android:name
-		ADDED from [:react-native-webview] /Users/jamessleep/Documents/smartinsole_ios/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-webview] C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:14:5-88
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:14:5-88
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/848991d3c75e1364fc3fff1527a41f8d/jetified-rxandroidble-1.7.0/AndroidManifest.xml:14:5-88
+ADDED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:14:5-88
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:14:5-88
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\4af46ffbfab6d62f2edee961cae49f5f\jetified-rxandroidble-1.7.0\AndroidManifest.xml:14:5-88
 	android:name
-		ADDED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] /Users/jamessleep/.gradle/caches/transforms-2/files-2.1/787f87edb41feb70822566026f3e60cb/jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a/AndroidManifest.xml:14:29-85
+		ADDED from [com.github.Polidea:MultiPlatformBleAdapter:58c87b49f12f4a5ab6f7af31f8085249e206400a] C:\Users\JamesSleep\.gradle\caches\transforms-2\files-2.1\8d122ca7bc157503b4acc132a5935074\jetified-MultiPlatformBleAdapter-58c87b49f12f4a5ab6f7af31f8085249e206400a\AndroidManifest.xml:14:29-85

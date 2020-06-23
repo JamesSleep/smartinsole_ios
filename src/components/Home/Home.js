@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet ,StatusBar, Image, AsyncStorage } from 'react-native';
+import { StyleSheet ,StatusBar, Image, AsyncStorage, Dimensions } from 'react-native';
 import { Text, View, Button, Thumbnail } from 'native-base'; //사용하지않을예정 수정필요
 import LinearGradient from 'react-native-linear-gradient'; //그라데이션 모듈
 import Axios from 'axios';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/user/get?token=";
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function Home({navigation}) {
 	const [token, setToken] = useState("");
@@ -41,7 +43,7 @@ function Home({navigation}) {
 			console.log("err :" + err);
 		});
 	}
-
+	
 	return (
 		<LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#65C5FF', '#0ED2F7']} style={css.linearGradient}>
 			<StatusBar hidden={true}/>
@@ -49,47 +51,46 @@ function Home({navigation}) {
 				<View style={css.logoView}>
 					<Thumbnail style={css.logo} square/>
 					<Button style={css.joinBtn} onPress={()=>navigation.navigate('Join')}>
-						<Text style={{color:"black",fontSize:22,fontWeight:"bold"}}>회원가입</Text>
+						<Text style={{color:"black",fontSize:_WIDTH/20,fontWeight:"bold"}}>회원가입</Text>
 					</Button>
 				</View>
 				<View style={css.socialView}>
 					<View style={{flexDirection:"row",alignItems:"center"}}>
 						<View style={{width:"30%",height:2, backgroundColor:"#fff"}}/>
-						<Text style={{color:"#fff",fontSize:18, marginHorizontal:20}}>간편로그인</Text>
+						<Text style={{color:"#fff",fontSize:_WIDTH/25, marginHorizontal:20}}>간편로그인</Text>
 						<View style={{width:"30%",height:2, backgroundColor:"#fff"}}/>
 					</View>
 					<View style={{width:"90%", flexDirection:"row", justifyContent:"space-around", marginTop:20 }}>
 						<View style={{alignItems:"center"}}>
 							<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
-								<Image style={{width:95, height:95}} source={require('../../image/kakaotalk.png')}/>
+								<Image style={{width:_WIDTH/5, height:_WIDTH/5}} source={require('../../image/kakaotalk.png')}/>
 							</Button>
-							<Text style={{color: "#fff"}}>카카오톡</Text>
+							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>카카오톡</Text>
 						</View>
 						<View style={{alignItems:"center"}}>
 							<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
-									<Image style={{width:80, height:80}} source={require('../../image/google2.png')}/>
+									<Image style={{width:_WIDTH/6, height:_WIDTH/6}} source={require('../../image/google2.png')}/>
 							</Button>
-							<Text style={{color: "#fff"}}>Google</Text>
+							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>Google</Text>
 						</View>
 						<View style={{alignItems:"center"}}>
 						<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
-								<Image style={{width:95, height:95}} source={require('../../image/naver.png')}/>
+								<Image style={{width:_WIDTH/5, height:_WIDTH/5}} source={require('../../image/naver.png')}/>
 							</Button>
-							<Text style={{color: "#fff"}}>네이버</Text>
+							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>네이버</Text>
 						</View>
 					</View>
 				</View>
 				<View style={css.loginView}>
-					<Text style={{color:"#fff"}}>이미 계정이 있으신가요?</Text>
-					<Text style={{color:"#fff", textDecorationLine:"underline"}} onPress={()=>navigation.navigate('Login')}>로그인하기</Text>
+					<Text style={{fontSize:_WIDTH/25, color:"#fff"}}>이미 계정이 있으신가요?</Text>
+					<Text style={{fontSize:_WIDTH/25, color:"#fff", textDecorationLine:"underline"}} onPress={()=>navigation.navigate('Login')}>로그인하기</Text>
 				</View>
 			</View>
 		</LinearGradient>		
 	);
 }
-
+console.log(Dimensions.get('window').width)
 const css = StyleSheet.create({
-	
 	linearGradient: {
 	  flex: 1
 	},
@@ -114,22 +115,22 @@ const css = StyleSheet.create({
 		justifyContent: "space-around",
 	},
 	logo: {
-		width: 120,
-		height: 120,
+		width: _WIDTH/4,
+		height: _WIDTH/4,
 		backgroundColor: "#fff",
 		borderRadius: 20,
 	},
 	joinBtn: {
 		width: "80%",
-		height: 60,
+		height: _HEIGHT/12,
 		marginTop: 100,
 		justifyContent: "center",
 		borderRadius: 30,
 		backgroundColor: "#fff",
 	},
 	socialBtn: {
-		width: 95,
-		height: 95,
+		width: _WIDTH/5,
+		height: _WIDTH/5,
 		marginBottom: 10,
 		backgroundColor: "#fff",
 		borderRadius: 20,
