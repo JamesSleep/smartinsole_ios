@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, Image, ToastAndroid } from 'react-native';
+import { View, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components';
 import Average from './Average';
 import Percentage from './Percentage';
 
-const LEFT_INSOLE_NAME = "left insole"; 
-const RIGHT_INSOLE_NAME = "right insole";
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function Analysis({navigation}) {
     const [tabSwipe,setTab] = useState(true);
@@ -55,10 +55,10 @@ function Analysis({navigation}) {
 }
 
 const FakeLogo = styled.View`
-    width : 90px;
-    height : 90px;
+    width : ${_WIDTH/5}px;
+    height : ${_WIDTH/5}px;
     background-color : white;
-    border-radius : 20px;
+    border-radius : ${_WIDTH/18}px;
 `;
 const InsoleDataColumn = styled.View`
     width : 100%;
@@ -74,7 +74,9 @@ const InsoleDataColumn = styled.View`
 `;
 const TabBtn = styled.TouchableOpacity`
     width : 100%;
-    height : 100%;
+    height : 10%;
+    padding-bottom : ${_WIDTH/60}px;
+    justify-content : center;
     border-top-left-radius : 25px;
     border-top-right-radius : 25px;
     border-bottom-left-radius : 25px;
@@ -82,7 +84,7 @@ const TabBtn = styled.TouchableOpacity`
 const TabText = styled.Text`
     padding-top : 15px;
     text-align : center;
-    font-size : 18px;
+    font-size : ${_WIDTH/27}px;
 `;
 
 

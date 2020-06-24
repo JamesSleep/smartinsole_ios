@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, AsyncStorage } from 'react-native';
+import { View, AsyncStorage, Dimensions } from 'react-native';
 import styled from 'styled-components';
 import Swiper from 'react-native-swiper';
 import Modal from 'react-native-modal';
@@ -7,6 +7,9 @@ import Calendar from './Calendar';
 import Chart from './Chart';
 import InsoleData from '../Insole/InsoleData';
 import Axios from 'axios';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const WEEK_ENUM = ["첫째주","둘째주","셋째주","넷째주","다섯째주","여섯째주"];
 const FAKE_DB = { 
@@ -96,7 +99,7 @@ function Average() {
 	}
     return (
         <View style={{width:"100%",height:"100%", justifyContent:"center",alignItems:"center"}}>
-            <View style={{flexDirection:"row",marginTop:70}}>
+            <View style={{flexDirection:"row",marginTop:_WIDTH/7}}>
                 <AvgTab tab={tab} direction onPress={()=>setTab(true)}>
                     <AvgText tab={tab}>월간평균</AvgText>
                 </AvgTab>
@@ -130,7 +133,7 @@ function Average() {
                         </> }
                 </SelectDate>
                 <DataView contentContainerStyle={{alignItems:"center"}}>
-                    <Swiper height={280} loop={false} onMomentumScrollEnd={(e, state, context) => {
+                    <Swiper height={_HEIGHT*0.37} loop={false} onMomentumScrollEnd={(e, state, context) => {
                         state.index === 1?setSwap(true):setSwap(false);
                     }}>
                         <FootDataView><InsoleData name={"temp"} data={insoleData}/></FootDataView>
@@ -149,7 +152,7 @@ function Average() {
 
 const AvgTab = styled.TouchableOpacity`
     width : 35%;
-    height : 30px;
+    height : ${_WIDTH/15}px;
     justify-content : center;
     align-items : center;
     background-color : ${props=> props.tab?"#4F92E0":"#d1ccc0"} ;
@@ -158,7 +161,7 @@ const AvgTab = styled.TouchableOpacity`
         "border-top-right-radius : 30px; border-bottom-right-radius : 30px;"}
 `;
 const AvgText = styled.Text`
-    font-size : 15px;
+    font-size : ${_WIDTH/27}px;
     text-align : center;
     color : ${props=> props.tab?"#fff":"black"} ;
 `;
@@ -170,7 +173,7 @@ const AvgDataView = styled.View`
 `;
 const SelectDate = styled.TouchableOpacity`
     width : 100%;
-    height : 60px;
+    height : ${_WIDTH/7}px;
     margin-top : 10px;
     background-color : #4F92E0;
     border-top-left-radius : 10px;
@@ -180,31 +183,30 @@ const SelectDate = styled.TouchableOpacity`
 `;
 const DataView = styled.ScrollView`
     width : 100%;
-    padding : 10px 10px 0px 10px;
-    margin-bottom : 60px;
+    padding : 3% 3% 0% 3%;
+    margin-bottom : ${_HEIGHT/12}px;
     background-color : #d1ccc0;
     border-bottom-left-radius : 10px;
     border-bottom-right-radius : 10px;
 `;
 const FootDataView = styled.View`
     width : 100%;
-    height : 240px;
-    margin-bottom : 40px;
+    height : ${_WIDTH/2}px;
     background-color : #fff;
 `;
 const ChartView = styled.View`
     width : 95%;
-    height : 250px;
-    margin-bottom : 20px;
+    height : ${_HEIGHT/3}px;
+    margin-bottom : 30px;
     background-color : #fff;
 `;
 const DateText = styled.Text`
-    font-size : 20px;
+    font-size : ${_WIDTH/19}px;
     text-align : center;
     color : white;
 `;
 const DateText2 = styled.Text`
-    font-size : 15px;
+    font-size : ${_WIDTH/28}px;
     text-align : center;
     color : white;
 `;

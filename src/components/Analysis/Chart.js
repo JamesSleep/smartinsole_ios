@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { View, Text } from 'react-native';
+import { View, Text, Dimensions } from 'react-native';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const WEEK_ENUM = ["첫째주","둘째주","셋째주","넷째주","다섯째주","여섯째주"];
 const FakeDB = [
@@ -40,12 +43,12 @@ function Chart({swap, selectWeek}) {
 
 const ValueColumn = styled.View`
     width : 16%;
-    height : 250px;
+    height : ${_HEIGHT/3}px;
     justify-content : center;
 `;
 const BarView = styled.View`
     width : 100%;
-    height : 160px;
+    height : ${_HEIGHT/5}px;
     flex-direction : row;
     justify-content : center;
     align-items : flex-end;
@@ -53,12 +56,12 @@ const BarView = styled.View`
 `;
 const WeekView = styled.View`
     width : 100%;
-    height : 70px;
-    padding-top : 15px;
+    height : ${_HEIGHT/13}px;
+    padding-top : ${_HEIGHT/36}px;
     align-items : center;
 `;
 const WeekText = styled.Text`
-    font-size : 10px;
+    font-size : ${_WIDTH/40}px;
 `;
 const Bar = styled.View`
     width : 30%
@@ -71,19 +74,19 @@ const HorizonLine = styled.View`
     height : 1px;
     background-color : black;
     position : absolute;
-    bottom : 70px;
+    bottom : ${_HEIGHT*0.087}px;
 `;
 const Category = styled.View`
     width : 100%;
     flex-direction : row;
     justify-content : center;
     position : absolute;
-    bottom : 10px;
+    bottom : 5px;
 `;
 const Circle = styled.View`
-    width : 13px;
-    height : 13px;
-    margin : 0 3px;
+    width : ${_WIDTH/32}px;
+    height :${_WIDTH/32}px;
+    margin : 1px 3px;
     background-color : ${props=>props.L?"#FF807F":"#7798FE"};
     border-radius : 50px;
 `;
