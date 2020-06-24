@@ -33,7 +33,7 @@ function Home({navigation}) {
 			if(res.data.success) {
 				navigation.reset({
 					index:0,
-					routes:[{name:"Bluetooth"}]
+					routes:[{name:"MainRouter"}]
 				});
 			} else {
 				alert("토큰정보가 만료되었습니다");
@@ -89,7 +89,7 @@ function Home({navigation}) {
 		</LinearGradient>		
 	);
 }
-console.log(Dimensions.get('window').width)
+
 const css = StyleSheet.create({
 	linearGradient: {
 	  flex: 1

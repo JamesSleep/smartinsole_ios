@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Image, StyleSheet } from 'react-native';
+import { Text, View, Image, StyleSheet, Dimensions } from 'react-native';
 import Temperature from './Temperature';
 import Pressure from './Pressure';
 
-
+const _WIDTH = Dimensions.get('window').width;
 
 function InsoleData({name , data, route}) {
-    if(route !== "Main") console.log(data);
     return (
         <>
         <View style={{flex:1}}>
             { route === "Main" ?
-              <Text>실시간 모니터링</Text>
+              <Text style={{fontSize:_WIDTH/30}}>실시간 모니터링</Text>
               : null }
         </View>
         <View style={{flex:10,flexDirection:"row"}}>

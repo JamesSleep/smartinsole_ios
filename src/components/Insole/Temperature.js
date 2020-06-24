@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, Image } from 'react-native';
+import { StyleSheet, Image, Dimensions } from 'react-native';
 import RadialGradient from 'react-native-radial-gradient';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const color = [
     {inner : "#ff4757", outer : "#ff7f50"},
@@ -21,71 +24,71 @@ export default function Temperature({data}) {
             <Image source={require('../../image/bal.png')} style={styles.footImg2}/>
             {/* LEFT FOOT */}
             {/* TL1 */}
-            <RadialGradient style={{width:70,height:70,position:'absolute',left:"21%",top:"14%",zIndex:2,}}
+            <RadialGradient style={{width:_WIDTH*0.14,height:_WIDTH*0.14,position:'absolute',left:"23%",top:"14%",zIndex:2,}}
                 colors={[color[colorHandler(data.TL1)].inner,color[colorHandler(data.TL1)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[35,35]}
-                radius={30}/>  
+                center={[_WIDTH*0.07,_WIDTH*0.07]}
+                radius={_WIDTH*0.07}/>  
             {/* TL0 */}
-            <RadialGradient style={{width:50,height:50,position:'absolute',left:"31%",top:"35%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1,position:'absolute',left:"34%",top:"35%",zIndex:1,}}
                 colors={[color[colorHandler(data.TL0)].inner,color[colorHandler(data.TL0)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TL2 */}
-            <RadialGradient style={{width:50,height:50,position:'absolute',left:"20%",top:"34%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1,position:'absolute',left:"24%",top:"34%",zIndex:1,}}
                 colors={[color[colorHandler(data.TL2)].inner,color[colorHandler(data.TL2)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TL3 */}
-            <RadialGradient style={{width:50,height:50, position:'absolute',left:"10%",top:"36%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1, position:'absolute',left:"15%",top:"36%",zIndex:1,}}
                 colors={[color[colorHandler(data.TL3)].inner,color[colorHandler(data.TL3)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TL4 */}
-            <RadialGradient style={{width:70,height:70, position:'absolute',left:"18%",bottom:"15%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.14,height:_WIDTH*0.14, position:'absolute',left:"23%",bottom:"17%",zIndex:1,}}
                 colors={[color[colorHandler(data.TL4)].inner,color[colorHandler(data.TL4)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[35,35]}
-                radius={35}/>
+                center={[_WIDTH*0.07,_WIDTH*0.07]}
+                radius={_WIDTH*0.07}/>
             {/* RIGHT FOOT */}
             {/* TR1 */}
-            <RadialGradient style={{width:70,height:70,position:'absolute',right:"21%",top:"14%",zIndex:2,}}
+            <RadialGradient style={{width:_WIDTH*0.14,height:_WIDTH*0.14,position:'absolute',right:"23%",top:"14%",zIndex:2,}}
                 colors={[color[colorHandler(data.TR1)].inner,color[colorHandler(data.TR1)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[35,35]}
-                radius={30}/>  
+                center={[_WIDTH*0.07,_WIDTH*0.07]}
+                radius={_WIDTH*0.07}/>  
             {/* TR0 */}
-            <RadialGradient style={{width:50,height:50,position:'absolute',right:"31%",top:"35%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1,position:'absolute',right:"34%",top:"35%",zIndex:1,}}
                 colors={[color[colorHandler(data.TR0)].inner,color[colorHandler(data.TR0)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TR2 */}
-            <RadialGradient style={{width:50,height:50,position:'absolute',right:"20%",top:"34%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1,position:'absolute',right:"24%",top:"34%",zIndex:1,}}
                 colors={[color[colorHandler(data.TR2)].inner,color[colorHandler(data.TR2)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TR3 */}
-            <RadialGradient style={{width:50,height:50, position:'absolute',right:"10%",top:"36%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.1,height:_WIDTH*0.1, position:'absolute',right:"15%",top:"36%",zIndex:1,}}
                 colors={[color[colorHandler(data.TR3)].inner,color[colorHandler(data.TR3)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[25,25]}
-                radius={25}/>
+                center={[_WIDTH*0.05,_WIDTH*0.05]}
+                radius={_WIDTH*0.05}/>
             {/* TR4 */}
-            <RadialGradient style={{width:70,height:70, position:'absolute',right:"18%",bottom:"15%",zIndex:1,}}
+            <RadialGradient style={{width:_WIDTH*0.14,height:_WIDTH*0.14, position:'absolute',right:"23%",bottom:"17%",zIndex:1,}}
                 colors={[color[colorHandler(data.TR4)].inner,color[colorHandler(data.TR4)].outer,"rgba(214,215,220,0)"]}
                 stops={[0.1,0.5,1]}
-                center={[35,35]}
-                radius={35}/>
+                center={[_WIDTH*0.07,_WIDTH*0.07]}
+                radius={_WIDTH*0.07}/>
         </>
     )
 }
 
 const styles = StyleSheet.create({
-    footImg:{ width:"100%", height:"100%", position:"absolute", zIndex : 5, },
-    footImg2 : {width:"100%",height:"100%", position:"absolute", backgroundColor : "#D6D7DC", zIndex : -1,},
+    footImg:{ width:"100%", height:"95%", position:"absolute", zIndex : 5, },
+    footImg2 : {width:"100%",height:"95%", position:"absolute", backgroundColor : "#D6D7DC", zIndex : -1,},
 });

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, ScrollView, AsyncStorage, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, AsyncStorage, TouchableOpacity, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -9,6 +9,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/user/get?token=";
 
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
+
 function Profile({navigation}) {
     const [token,setToken] = useState("");
     const [userInfo, setUserInfo] = useState({});
@@ -16,7 +19,6 @@ function Profile({navigation}) {
         if(token === "") { autoLogin(); }
         if(token !== "") { loadUserData(); }
     },[token, userInfo]);
-
     const autoLogin = async () => {
 		await AsyncStorage.getItem('loginInfo')
 		.then(res=>{
@@ -24,7 +26,6 @@ function Profile({navigation}) {
             if(data != null) { setToken(data.token); } 
 		})
 	};
-
     const loadUserData = async () => {
         await Axios.get(SITE_URL+API+token)
         .then(res=>{ 
@@ -38,7 +39,6 @@ function Profile({navigation}) {
 			ToastAndroid.show(JSON.stringify(err),ToastAndroid.SHORT);
 		});
 	}
-
     const logOut = async () => {
         await AsyncStorage.clear()
         .then(res => {

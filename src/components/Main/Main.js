@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Button, AsyncStorage } from 'react-native';
+import { View, Text, Button, AsyncStorage, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import InsoleData from '../Insole/InsoleData';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Axios from 'axios';
+import { BleManager } from "react-native-ble-plx";
+import base64 from "react-native-base64";
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const LEFT_INSOLE_NAME = "left insole"; 
 const RIGHT_INSOLE_NAME = "right insole";
@@ -22,21 +27,24 @@ const FAKE_DB = [
      TR0:41,TR1:26,TR2:28,TR3:35,TR4:40,PR0:124,PR1:1408,PR2:1664,PR3:1996,PR4:2416,PR5:2901,PR6:3050,PR7:3187,PR8:3668},
 ];
 
-function Main({navigation}) {
+function Main({navigation, route}) {
     const [data, setData] = useState(0);
     const [token, setToken] = useState("");
+    const [insoleData, setInsoleData] = useState({
+        left: {},
+        right: {}
+    });
+    const [tabSwipe,setTab] = useState(true);
+    const { leftDevice } = route.params;
+    const manager = new BleManager();
     useEffect(() => {
         getToken();
+        if(leftDevice.id.length) getInsoleData();
         const interval = setInterval(() => {
             setData(data => data >=2 ? 0 : data + 1);
         }, 1000);
         return () => clearInterval(interval);
     }, []);
-    const [devices, setDevices] = useState([]);
-    const [LeftDevice, setLeft] = useState({id:"",name:"",isConnect:false});
-    const [RightDevice, setRight] = useState({id:"",name:"",isConnect:false});
-    const [tabSwipe,setTab] = useState(true);
-
     const getToken = async () => {
 		await AsyncStorage.getItem('loginInfo')
 		.then(res=>{
@@ -47,29 +55,81 @@ function Main({navigation}) {
 				
 			}
 		})
-	}
+    }
+    const getInsoleData = async() => {
+        await manager.connectToDevice(leftDevice.id)
+        .then(res => {
+            return res.discoverAllServicesAndCharacteristics();
+        }).then(async (device) => {
+            return device.services();
+        }).then(async (services)=> {
+            let servicesMap= {};
+            for(let service of services) {
+                let characteristicsMap = {};
+                let characteristics = await service.characteristics();
+                for (let characteristic of characteristics) {
+                    characteristicsMap[characteristic.uuid] = {
+                        uuid : characteristic.uuid,
+                        isReadable : characteristic.isReadable,
+                        isWritableWithResponse : characteristic.isWritableWithResponse,
+                        isWritableWithoutResponse : characteristic.isWritableWithoutResponse,
+                        isNotifiable : characteristic.isIndicatable,
+                        isNotifying : characteristic.isNotifying,
+                        value : characteristic.value
+                    }
+                }
+                servicesMap[service.uuid] = {
+                    uuid : service.uuid,
+                    isPrimary : service.isPrimary,
+                    characteristicsCount : characteristics.length,
+                    characteristics : characteristicsMap
+                }
+            }
+            let characteristicUUID;
+            const serviceUUIDs = leftDevice.uuid;
+            const id = leftDevice.id;
+            for(let i in servicesMap) {
+                let uuid = i;
+                if(uuid === serviceUUIDs) {
+                    let chID = servicesMap[uuid].characteristics;
+                    for(let inner in chID) characteristicUUID = inner;
+                }
+            }
+            await manager.readCharacteristicForDevice(id,serviceUUIDs,characteristicUUID,)
+            .then(res => {
+                setInsoleData({...insoleData,right: base64.decode(res.value)});
+                console.log(base64.decode(res.value));
+            });
+        });
+    }
     const insoleDataHandler = async () => {
-        const insoleData = FAKE_DB[5];
+        const { PL0, PL1, PL2, PL3, PL4, PL5, PL6, PL7, PL8 } = insoleData.left.Pressure;
+        const { PR0, PR1, PR2, PR3, PR4, PR5, PR6, PR7, PR8 } = insoleData.right.Pressure;
+        const { TL0, TL1, TL2, TL3, TL4 } = insoleData.left.Temper;
+        const { TR0, TR1, TR2, TR3, TR4 } = insoleData.right.Temper;
+        const xL = insoleData.left.Cop.x; const yL = insoleData.left.Cop.y;
+        const xR = insoleData.right.Cop.x; const yR = insoleData.right.Cop.y;
+
         const postData = JSON.stringify({
             "create" : "2020-06-21",  //오늘날짜
             // 왼쪽 압력 값
-            "PL0": insoleData.left.press[0].toString(), "PL1": insoleData.left.press[1].toString(), "PL2": insoleData.left.press[2].toString(), 
-            "PL3": insoleData.left.press[3].toString(), "PL4": insoleData.left.press[4].toString(), "PL5": insoleData.left.press[5].toString(), 
-            "PL6": insoleData.left.press[6].toString(), "PL7": insoleData.left.press[7].toString(), "PL8": insoleData.left.press[8].toString(), 
+            "PL0": PL0.toString, "PL1": PL1.toString(), "PL2": PL2.toString(), 
+            "PL3": PL3.toString(), "PL4": PL4.toString(), "PL5": PL5.toString(), 
+            "PL6": PL6.toString(), "PL7": PL7.toString(), "PL8": PL8.toString(), 
             // L (x,y)
-            "xL": "2", "yL": "2",
+            "xL": xL, "yL": yL,
             // 왼쪽 온도 값 
-            "TL0": insoleData.left.temp[0].toString(), "TL1": insoleData.left.temp[1].toString(), "TL2": insoleData.left.temp[2].toString(), 
-            "TL3": insoleData.left.temp[3].toString(), "TL4": insoleData.left.temp[4].toString(), 
+            "TL0": TL0.toString(), "TL1": TL1.toString(), "TL2": TL2.toString(), 
+            "TL3": TL3.toString(), "TL4": TL4.toString(), 
             //오른쪽 압력 값
-            "PR0": insoleData.right.press[0].toString(), "PR1": insoleData.right.press[1].toString(), "PR2": insoleData.right.press[2].toString(), 
-            "PR3": insoleData.right.press[3].toString(), "PR4": insoleData.right.press[4].toString(), "PR5": insoleData.right.press[5].toString(), 
-            "PR6": insoleData.right.press[6].toString(), "PR7": insoleData.right.press[7].toString(), "PR8": insoleData.right.press[8].toString(), 
+            "PR0": PR0.toString(), "PR1": PR1.toString(), "PR2": PR2.toString(), 
+            "PR3": PR3.toString(), "PR4": PR4.toString(), "PR5": PR5.toString(), 
+            "PR6": PR6.toString(), "PR7": PR7.toString(), "PR8": PR8.toString(), 
             //R (x,y)
-            "xR": "2", "yR": "2",
+            "xR": xR, "yR": yR,
             // 오른쪽 온도 값
-            "TR0": insoleData.right.temp[0].toString(), "TR1": insoleData.right.temp[1].toString(), "TR2": insoleData.right.temp[2].toString(), 
-            "TR3": insoleData.right.temp[3].toString(), "TR4": insoleData.right.temp[4].toString()
+            "TR0": TR0.toString(), "TR1": TR1.toString(), "TR2": TR2.toString(), 
+            "TR3": TR3.toString(), "TR4": TR4.toString()
         });
         await Axios.post(SITE_URL+API+token, postData, {
             headers : {
@@ -79,7 +139,6 @@ function Main({navigation}) {
             console.log(res.data);
         })
     }
-
     const InsoleTab = styled.View`
         width : 27%;
         height : 100%;
@@ -87,7 +146,7 @@ function Main({navigation}) {
         bottom : 0;
         left : 0;
         background-color : ${tabSwipe?"white":"#d1ccc0"};
-        border-radius : 25px;
+        border-radius : ${_WIDTH/20}px;
     `;
     const InsoleTab2 = styled.View`
         width : 27%;
@@ -96,7 +155,7 @@ function Main({navigation}) {
         bottom : 0;
         left : 29%;
         background-color : ${tabSwipe?"#d1ccc0":"white"};
-        border-radius : 25px;
+        border-radius : ${_WIDTH/20}px;
     `;
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1, alignItems:"center"}} >
@@ -105,27 +164,27 @@ function Main({navigation}) {
                 <FakeLogo />
                 <Profile >
                     <ProfileIcon onPress={()=>navigation.navigate('Profile')}/>
-                    <Text style={{color:"white"}}>프로필</Text>
+                    <Text style={{fontSize:_WIDTH/32, color:"white"}}>프로필</Text>
                 </Profile>
             </View>
             <View style={{flex:1, width:"100%", justifyContent:"center",alignItems:"center"}}>
-                <ConnectView>
-                    <Text style={{flex:1, fontSize:17, fontWeight:"bold"}}>인솔 연결 상태</Text>
+                <ConnectView onTouchEnd={()=>navigation.navigate("Bluetooth")}>
+                    <Text style={{flex:1, fontSize:_WIDTH/26, fontWeight:"bold"}}>인솔 연결 상태</Text>
                     <View style={{flex:3, flexDirection:"row",justifyContent:"space-around",  alignItems:"center"}}>
                         <View style={{flexDirection:"row",justifyContent:"space-around", alignItems:"center"}}>
-                            <Icon name="check-circle" size={40} 
-                            color={RightDevice.isConnect?"#34ace0":"#d1ccc0"} />
-                            <Text style={{marginLeft:10}}>L 왼쪽 인솔</Text>
+                            <Icon name="check-circle" size={_WIDTH/12} 
+                            color={leftDevice.isConnect?"#34ace0":"#d1ccc0"} />
+                            <Text style={{fontSize:_WIDTH/30, marginLeft:10}}>L 왼쪽 인솔</Text>
                         </View>
                         <View style={{flexDirection:"row", alignItems:"center"}}>
-                            <Icon name="check-circle" size={40} 
-                            color={RightDevice.isConnect?"#34ace0":"#d1ccc0"} />
-                            <Text style={{marginLeft:10}}>R 오른쪽 인솔</Text>
+                            <Icon name="check-circle" size={_WIDTH/12} 
+                            color={"#d1ccc0"} />
+                            <Text style={{fontSize:_WIDTH/30, marginLeft:10}}>R 오른쪽 인솔</Text>
                         </View>
                     </View>
                 </ConnectView>
             </View>
-            <View style={{flex:5, width:"100%", justifyContent:"center",alignItems:"center", paddingBottom:20}}>
+            <View style={{flex:5, width:"100%", justifyContent:"center",alignItems:"center", paddingBottom:_WIDTH/40}}>
                 <View style={{width:"85%", justifyContent:"flex-end" }}>
                     <InsoleTab>
                         <TabBtn onPress={()=>setTab(true)}><TabText>온도</TabText></TabBtn>
@@ -144,51 +203,51 @@ function Main({navigation}) {
     
 }
 const FakeLogo = styled.View`
-    width : 90px;
-    height : 90px;
+    width : ${_WIDTH/5}px;
+    height : ${_WIDTH/5}px;
     background-color : white;
-    border-radius : 20px;
+    border-radius : ${_WIDTH/25}px;
 `;
 const Profile = styled.View`
-    width : 80px;
+    width : ${_WIDTH/8}px;
     position : absolute;
-    top : 20px;
-    right : 20px;
+    top : ${_WIDTH/20}px;
+    right : ${_WIDTH/20}px;
     justify-content : center;
     align-items : center;
 `;
 const ProfileIcon = styled.TouchableOpacity`
-    width : 60px;
-    height : 60px;
+    width : ${_WIDTH/8}px;
+    height : ${_WIDTH/8}px;
     border-radius : 50px;
     background-color : white;
 `;
 const ConnectView = styled.View`
     width : 85%;
-    height : 120px;
+    height : ${_HEIGHT/6}px;
     background-color : white;
-    border-radius : 25px;
+    border-radius : ${_WIDTH/25}px;
     padding : 10px;
 `;
 const InsoleDataColumn = styled.View`
     width : 100%;
     height : 85%;
     background-color : white;
-    border-top-right-radius : 25px;
-    border-bottom-left-radius : 25px;
-    border-bottom-right-radius : 25px;
+    border-top-right-radius : ${_WIDTH/25}px;
+    border-bottom-left-radius :${_WIDTH/25}px;
+    border-bottom-right-radius : ${_WIDTH/25}px;
 `;
 const TabBtn = styled.TouchableOpacity`
     width : 100%;
     height : 100%;
-    border-top-left-radius : 25px;
-    border-top-right-radius : 25px;
-    border-bottom-left-radius : 25px;
+    border-top-left-radius : ${_WIDTH/25}px;
+    border-top-right-radius : ${_WIDTH/25}px;
+    border-bottom-left-radius : ${_WIDTH/25}px;
 `;
 const TabText = styled.Text`
-    padding-top : 10px;
+    padding-top : ${_WIDTH/35}px;
     text-align : center;
-    font-size : 20px;
+    font-size : ${_WIDTH/25}px;
 `;
 
 export default Main;

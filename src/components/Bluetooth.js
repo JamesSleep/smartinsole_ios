@@ -1,67 +1,124 @@
-//import BluetoothSerial from 'react-native-bluetooth-serial-next';
 import React, { useState, useEffect } from 'react';
 import { Text, View, Dimensions } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { BleManager } from "react-native-ble-plx"
-
+ 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
-
-const LEFT_INSOLE_NAME = "left insole"; 
-const RIGHT_INSOLE_NAME = "right insole";
+const LEFT_NAME = "L";
+const RIGHT_NAME = "";
 
 function Bluetooth({navigation}) { 
-    const [devices, setDevices] = useState([]);
-    const [LeftDevice, setLeft] = useState({id:"",name:"",isConnect:false});
-    const [RightDevice, setRight] = useState({id:"",name:"",isConnect:false});
-    const [tabSwipe,setTab] = useState(true);
-    const manager = new BleManager()
-    const [uuid ,setUuid] =useState("");
-    const [serviceUUIDs ,setsServiceUUIDs] =useState([]);
-    const [state ,setState] =useState("PoweredOn");
+    const [power, setPower] = useState(false);
+    const [scan, setScan] = useState(false);
+    const [leftDevice, setLeftDevice] = useState({
+        name : LEFT_NAME,
+        id : "",
+        uuid: "",
+        isConnect : false
+    });
+    const manager = new BleManager();
+
     useEffect(() => {
-        /* console.log("gogo")
-        let states = manager.onStateChange();
-        if(states == "PoweredOn"){
-            setState(state)
-        } */
-        
-        // list();
-        // isConnect(LeftDevice);
-        // isConnect(RightDevice);
-    },[]);
-    const onBlu = async() => {
-        if(state == "PoweredOn"){
-            console.log("실행");
-            scanAndConnect();
-        } 
- 
-    }
-    const  scanAndConnect = async () => {
-        await manager.startDeviceScan(null,null, (error, device) => {
-            if (error) {
-                error(error.message)
-                return
-            }
-            if(device.name === "L"){
-                setupNotifications(device);        
-            }
-        });   
-    }
-    const setupNotifications = async (device) => {
-        await manager.stopDeviceScan();
-        console.log(device.serviceUUIDs);
-        console.log(device.name);
-        await manager.connectedDevices(device.serviceUUIDs).then(data =>{
-            console.log(data);
-        })
+        isPowered();
+        if(scan) scanAndConnect();
+        if(leftDevice.id.length > 0) doConnect();
+    },[power, scan, leftDevice]);
 
-        let st = await manager.connectToDevice(device.id);
-        console.log(st);
-    }
+    const isPowered = () => {
+        const subscription = manager.onStateChange((state) => {
+            if (state === "PoweredOn") {
+                setPower(true);
+                //subscription.remove();
+            } else { setPower(false); }
+        },true);
+    };
+    const scanAndConnect = () => {
+        let scan = false;
+        manager.startDeviceScan(null, null,(error,device) => {
+            if(error) {
+                console.log(error);
+                return;
+            }
+            if(device.name === LEFT_NAME) {
+                manager.stopDeviceScan();
+                console.log("scan complete");
+                setScan(false);
+                console.log(device.id)
+                setLeftDevice({
+                    ...leftDevice,
+                    id: device.id,
+                    uuid: device.serviceUUIDs[0]
+                });
+                scan = true;
+            }
+        });
+        setTimeout(() => {
+            if(!scan) {
+                manager.stopDeviceScan();
+                console.log("Don't found L");
+                setScan(false);
+            }
+        }, 5000);
+    };
+    const connecting = async id => {
+        await manager.connectToDevice(id)
+        .then(res => {
+            setLeftDevice({...leftDevice,
+                isConnect : true
+            });
+            return res.discoverAllServicesAndCharacteristics();
+        }).then(async (device) => {
+            return device.services();
+        }).then(async (services)=> {
+            let servicesMap= {};
+            for(let service of services) {
+                let characteristicsMap = {};
+                let characteristics = await service.characteristics();
 
+                for (let characteristic of characteristics) {
+                    characteristicsMap[characteristic.uuid] = {
+                        uuid : characteristic.uuid,
+                        isReadable : characteristic.isReadable,
+                        isWritableWithResponse : characteristic.isWritableWithResponse,
+                        isWritableWithoutResponse : characteristic.isWritableWithoutResponse,
+                        isNotifiable : characteristic.isIndicatable,
+                        isNotifying : characteristic.isNotifying,
+                        value : characteristic.value
+                    }
+                }
+                servicesMap[service.uuid] = {
+                    uuid : service.uuid,
+                    isPrimary : service.isPrimary,
+                    characteristicsCount : characteristics.length,
+                    characteristics : characteristicsMap
+                }
+            }
+            console.log(servicesMap);
+            setLeftDevice({
+                ...leftDevice,
+                servicesMap: servicesMap
+            });
+        });
+    };
+    const doConnect = async () => {
+        if(leftDevice.id.length > 0) {
+            try {
+                manager.connectToDevice(leftDevice.id)
+                .then(res => {
+                    setLeftDevice({
+                        ...leftDevice,
+                        isConnect: true
+                    })
+                    console.log("connected");
+                })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    }
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1, alignItems:"center"}} >
 			<MainView>
@@ -71,27 +128,39 @@ function Bluetooth({navigation}) {
                     <Text style={{fontSize:_WIDTH/28, color:"#d1ccc0"}}>스마트폰의 블루투스 악세서리를 연결해주세요</Text>
                 </View>
                 <View style={{flexDirection:"row",height:"100%",justifyContent:"space-around"}}>
-                    <BluetoothBox>
+                    <BluetoothBox onTouchEnd={()=>setScan(true)}>
                         <Text style={{fontSize:_WIDTH/30, fontWeight:"bold"}}>왼쪽 인솔 연결</Text>
-                        <Text style={{fontSize:_WIDTH/33, color:"#d1ccc0"}}>{LeftDevice.name===""?"LEFT":LeftDevice.name}</Text>
+                        <Text style={{fontSize:_WIDTH/33, color:"#d1ccc0"}}>{leftDevice.name===""?"LEFT":leftDevice.name}</Text>
                         <View style={{justifyContent:"center",alignItems:"center",height:"50%"}}>
-                            <Icon name="check-circle" size={_WIDTH/11}  color={LeftDevice.isConnect?"#34ace0":"#d1ccc0"} />
+                            <Icon name="check-circle" size={_WIDTH/11}  color={leftDevice.isConnect?"#34ace0":"#d1ccc0"} />
                         </View>
                     </BluetoothBox>
                     <BluetoothBox>
                         <Text style={{fontSize:_WIDTH/30, fontWeight:"bold"}}>오른쪽 인솔 연결</Text>
-                        <Text style={{fontSize:_WIDTH/33, color:"#d1ccc0"}}>{RightDevice.name===""?"RIGHT":RightDevice.name}</Text>
+                        <Text style={{fontSize:_WIDTH/33, color:"#d1ccc0"}}>{"R"}</Text>
                         <View style={{justifyContent:"center",alignItems:"center",height:"50%"}}>
-                            <Icon name="check-circle" size={_WIDTH/11}  color={RightDevice.isConnect?"#34ace0":"#d1ccc0"} />
+                            <Icon name="check-circle" size={_WIDTH/11} color={"#d1ccc0"} />
                         </View>
                     </BluetoothBox>
                 </View>
 			</MainView>
-            <NextBtn onPress={()=>navigation.navigate('MainRouter')}>
+            <NextBtn onPress={()=>navigation.navigate('MainRouter',{
+                screen: 'MainStack',
+                params: {
+                    screen: 'Main',
+                    params: {
+                        leftDevice: {
+                            isConnect : leftDevice.isConnect, 
+                            id: leftDevice.id, 
+                            uuid: leftDevice.uuid
+                        }
+                    }
+                }
+            })}>
                 <Text style={{fontSize:_WIDTH/22, fontWeight:"bold"}}>시작하기</Text>
             </NextBtn>
         </LinearGradient>
-    ) 
+    )
 }
 
 const MainView = styled.View`
