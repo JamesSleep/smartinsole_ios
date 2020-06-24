@@ -18,10 +18,10 @@ const MainRouter = () => {
         <Tab.Navigator 
             initialRouteName = "MainStack"
             tabBarOptions={{ 
-                activeTintColor : "#34ace0",
-                tabStyle : {borderRightWidth:0.5,height:_HEIGHT*0.2,bottom:_HEIGHT*0.035, 
-                    backgroundColor:"white",paddingBottom:_WIDTH/6},
-                labelStyle : {fontSize : _HEIGHT/50}
+                activeTintColor : "#34ace0", // 80 30
+                tabStyle : {borderRightWidth:0.5,height:80,bottom:30, 
+                    backgroundColor:"white"},
+                labelStyle : {fontSize : _HEIGHT/60}
             }}
         >
             <Tab.Screen 

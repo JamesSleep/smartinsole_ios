@@ -49,17 +49,17 @@ function Profile({navigation}) {
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
             <SafeAreaView style={{flex:1, width:"100%"}}>
             <View style={{flex:1, paddingHorizontal:25, paddingTop:30}}>
-                <Icon name="angle-left" style={{position:"absolute",left:20,top:5}} size={40} color="#fff" onPress={()=>navigation.goBack()}/>
+                <Icon name="angle-left" style={{position:"absolute",left:20,top:5}} size={_WIDTH/11} color="#fff" onPress={()=>navigation.goBack()}/>
                 <TouchableOpacity style={{position:"absolute",right:20,top:20}} onPress={()=>logOut()}>
-                    <Text style={{color:"white", fontSize:17}}>로그아웃</Text>
+                    <Text style={{color:"white", fontSize:_WIDTH/25}}>로그아웃</Text>
                 </TouchableOpacity>
                 <View style={{flex:2, justifyContent:"center", alignItems:"center"}}>
                     <ProfileIMG></ProfileIMG>
-                    <Text style={{color:"white", fontSize:16}}>프로필</Text>
+                    <Text style={{color:"white", fontSize:_WIDTH/28}}>프로필</Text>
                 </View>
                 <View style={{flex:4}}>
-                    <Text style={{color:"white", marginLeft:10, fontSize:25, fontWeight:"bold",marginBottom:5}}>내 프로필</Text>
-                    <View style={{width:"100%",height:"85%" , backgroundColor:"white", borderRadius:20, padding:20}}>
+                    <Text style={{color:"white", marginLeft:10, fontSize:_WIDTH/18, fontWeight:"bold",marginBottom:5}}>내 프로필</Text>
+                    <View style={{width:"100%",height:"85%" , backgroundColor:"white", borderRadius:20, padding:_WIDTH/24}}>
                         <RowColumn>
                             <RowTitle>이메일</RowTitle>
                             <RowData>{userInfo.email}</RowData>
@@ -86,12 +86,12 @@ function Profile({navigation}) {
                         </RowColumn>
                     </View>
                 </View>
-                <View style={{flex:1, justifyContent:"flex-start",marginBottom:20}}>
+                <View style={{flex:1, justifyContent:"flex-start",marginBottom:_HEIGHT/30}}>
                     <TouchableOpacity 
                         style={{width:"100%",height:"60%", backgroundColor:"white", borderRadius:30, justifyContent:"center"}}
                         onPress={()=>navigation.navigate('ProfileUpdate',{userInfo:userInfo})}
                     >
-                        <Text style={{fontSize:25, textAlign:"center",fontWeight:"bold"}}>프로필 수정하기</Text>
+                        <Text style={{fontSize:_WIDTH/20, textAlign:"center",fontWeight:"bold"}}>프로필 수정하기</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -100,16 +100,16 @@ function Profile({navigation}) {
     )
 }
 const ProfileIMG = styled.View`
-    width : 90px;
-    height : 90px;
+    width : ${_WIDTH/5}px;
+    height : ${_WIDTH/5}px;
     border-radius : 50px;
-    margin-bottom : 10px;
+    margin-bottom : ${_WIDTH/50}px;
     background-color : white;
 `;
 const RowColumn = styled.View`
     flex : 1;
     width : 100%;
-    padding : 8px 20px 8px 20px;
+    padding : 2% 9% 2% 9%;
     margin-bottom : 2%;
     flex-direction : row;
     justify-content : space-between;
@@ -117,10 +117,10 @@ const RowColumn = styled.View`
 `;
 const RowTitle = styled.Text`
     font-weight : bold;
-    font-size : 16px;
+    font-size : ${_WIDTH/28}px;
 `;
 const RowData = styled.Text`
-    font-size : 14px;
+    font-size : ${_WIDTH/32}px;
 `;
 
 export default Profile;

@@ -33,7 +33,7 @@ function Home({navigation}) {
 			if(res.data.success) {
 				navigation.reset({
 					index:0,
-					routes:[{name:"MainRouter"}]
+					routes:[{name:"Bluetooth"}]
 				});
 			} else {
 				alert("토큰정보가 만료되었습니다");

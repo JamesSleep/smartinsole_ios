@@ -40,10 +40,7 @@ function Main({navigation, route}) {
     useEffect(() => {
         getToken();
         if(leftDevice.id.length) getInsoleData();
-        const interval = setInterval(() => {
-            setData(data => data >=2 ? 0 : data + 1);
-        }, 1000);
-        return () => clearInterval(interval);
+        
     }, []);
     const getToken = async () => {
 		await AsyncStorage.getItem('loginInfo')

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  View, Text , ToastAndroid, AsyncStorage } from 'react-native'
+import {  View, Text , ToastAndroid, Dimensions } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -8,6 +8,9 @@ import Axios from 'axios';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const JOIN_API = "/user/mod?token=";
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function ProfileUpdate({navigation, route}) {
     const { userInfo } = route.params;
@@ -94,16 +97,16 @@ function ProfileUpdate({navigation, route}) {
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
              <SafeAreaView style={{flex:1}}>
             <View style={{flexDirection:"row", justifyContent:"center",alignItems:"center", height:80}}>
-                <Icon name="angle-left" size={40} color="#fff" style={{position:"absolute",left:20}}
+                <Icon name="angle-left" size={_WIDTH/11} color="#fff" style={{position:"absolute",left:20}}
                     onPress={()=>navigation.goBack()}/>
-                <Text style={{fontSize:20, color:"#fff", fontWeight:"bold"}}>프로필 수정하기</Text>
+                <Text style={{fontSize:_WIDTH/20, color:"#fff", fontWeight:"bold"}}>프로필 수정하기</Text>
             </View>
             <Form>
                 <MemberInfo>
                     <InfoColumn>
                         <InfoTitle>비밀번호</InfoTitle>
                         <PasswordBtn onPress={()=>navigation.navigate('ModifyPW')}>
-                            <Text style={{color:"#fff", textAlign:"center", fontSize: 15}}>비밀번호 변경하기</Text>
+                            <Text style={{color:"#fff", textAlign:"center", fontSize:_WIDTH/27}}>비밀번호 변경하기</Text>
                         </PasswordBtn>
                     </InfoColumn>
                     <InfoColumn>
@@ -128,7 +131,7 @@ function ProfileUpdate({navigation, route}) {
                         <RowView>
                             <InputData placeholder="인증번호를 입력해주세요"></InputData>
                             <CustomBtn>
-                                <Text style={{color:"white",fontSize:13, textAlign:"center"}}>인증하기</Text>
+                                <Text style={{color:"white",fontSize:_WIDTH/27, textAlign:"center"}}>인증하기</Text>
                             </CustomBtn>
                         </RowView>
                     </InfoColumn>
@@ -157,7 +160,7 @@ function ProfileUpdate({navigation, route}) {
                     </InfoColumn>
                 </MemberInfo>
                 <View style={{alignItems:"center", marginVertical:20}}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                    <PostBtn onPress={()=>post()}><Text style={{textAlign:"center", fontSize: 20}}>프로필 수정하기</Text></PostBtn>
+                    <PostBtn onPress={()=>post()}><Text style={{textAlign:"center", fontSize: _WIDTH/22}}>프로필 수정하기</Text></PostBtn>
                 </View>
             </Form>
             </SafeAreaView>
@@ -166,24 +169,24 @@ function ProfileUpdate({navigation, route}) {
 }
 
 const Form = styled.ScrollView`
-    margin : 0 20px;
+    margin : 0 ${_WIDTH/20}px;
 `;
 const MemberInfo = styled.View`
     background-color : #fff;
-    padding : 30px 30px 0px 30px;
+    padding : 8% 8% 0% 8%;
 `;
 const InfoColumn = styled.View`
-    margin-bottom : 20px;
+    margin-bottom : ${_WIDTH/22}px;
 `;
 const InfoTitle = styled.Text`
-    font-size : 18px;
+    font-size : ${_WIDTH/23}px;
     font-weight : bold;
 `;
 const InputData = styled.TextInput`
     width : 100%;
-    height : 40px;
+    height : ${_HEIGHT/15}px;
     color : black;
-    font-size : 15px;
+    font-size : ${_WIDTH/27}px;
     border-bottom-width : 1px;
     border-bottom-color : black;
 `;
@@ -200,19 +203,19 @@ const SegmentView = styled.View`
 `;
 const BtnText = styled.Text`
     color : white;
-    font-size : 14px;
+    font-size : ${_WIDTH/30}px;
     text-align : center;
 `;
 const PasswordBtn = styled.TouchableOpacity`
     margin-top : 10px;
     width : 50%;
-    height : 40px;
+    height : ${_HEIGHT/18}px;
     background-color : #4F92E0;
     justify-content : center;
 `;
 const CustomBtn = styled.TouchableOpacity`
-    width : 90px;
-    height : 40px;
+    width : ${_WIDTH/5}px;
+    height : ${_HEIGHT/18}px;
     position : absolute;
     right : 0;
     bottom : 0;
@@ -221,16 +224,16 @@ const CustomBtn = styled.TouchableOpacity`
 `;
 const SegBtnAct = styled.TouchableOpacity`
     width : 42%;
-    height : 60px;
-    margin : 10px 1px 0px 1px;
+    height : ${_HEIGHT/12}px;
+    margin : 3% 0.2% 0% 0.2%;
     background-color : #fff;
     justify-content : center;
     border : 1px solid #4F92E0;
 `;
 const SegBtnNoneAct = styled.TouchableOpacity`
     width : 42%;
-    height : 60px;
-    margin : 10px 1px 0px 1px;
+    height : ${_HEIGHT/12}px;
+    margin : 3% 0.2% 0% 0.2%;
     background-color : #fff;
     justify-content : center;
     border : 1px solid #dcdde1;
@@ -247,7 +250,7 @@ const SegTextNoneAct = styled.Text`
 `;
 const PostBtn = styled.TouchableOpacity`
     width : 80%;
-    height : 60px;
+    height : ${_HEIGHT/12}px;
     margin : 0px 1px 20px 1px;
     background-color : #fff;
     justify-content : center;
