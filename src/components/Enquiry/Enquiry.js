@@ -3,9 +3,11 @@ import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/AntDesign';
-import { View, Text, ScrollView, AsyncStorage } from 'react-native';
+import { View, Text, ScrollView, AsyncStorage, Dimensions } from 'react-native';
 import Axios from 'axios';
-import { and } from 'react-native-reanimated';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = ["/board/list?start=1&token=","/comment/list"];
@@ -73,11 +75,11 @@ function Enquiry({navigation}) {
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}} >
              <SafeAreaView style={{flex:1, width:"100%",height:"100%"}} >
-                <View style={{flex:1 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:30}}>
+                <View style={{flex:1 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:_HEIGHT/40}}>
                     <FakeLogo/>
                 </View>
-                <View style={{flex:4, width:"100%",height:"100%",paddingHorizontal:25, justifyContent:"flex-start",alignItems:"center", paddingBottom:20}}>
-                    <Text style={{width:"90%", color:"white", textAlign:"left", fontSize:20, marginBottom:5}}>나의 문의글</Text>
+                <View style={{flex:4, width:"100%",height:"100%",paddingHorizontal:_WIDTH/20, justifyContent:"flex-start",alignItems:"center", paddingBottom:_WIDTH/20}}>
+                    <Text style={{width:"90%", color:"white", textAlign:"left", fontSize:_WIDTH/22, marginBottom:5}}>나의 문의글</Text>
                     <EnquiryView>
                         <ScrollView>
                             <EnquiryList>
@@ -93,19 +95,19 @@ function Enquiry({navigation}) {
                                             <Title>{value.title}</Title>
                                             <View style={{flexDirection:"row", alignItems:"center"}}>
                                                 <Condition>{value.comments?"답변완료":"답변대기"}</Condition>
-                                                <Icon name={value.stretch?"caretup":"caretdown"} size={14} color="#7f8c8d"/>
+                                                <Icon name={value.stretch?"caretup":"caretdown"} size={_WIDTH/30} color="#7f8c8d"/>
                                             </View>
                                         </MyEnquiryColumn>
                                         {
                                             value.stretch?
                                             <>
-                                            <MyEnquiryView><Text>{value.content}</Text></MyEnquiryView>
+                                            <MyEnquiryView><Text style={{fontSize:_WIDTH/27}}>{value.content}</Text></MyEnquiryView>
                                             {   value.comments?
                                                 <AnswerView>    
-                                                    <Text style={{fontWeight:"bold"}}>답변완료</Text>
+                                                    <Text style={{fontSize:_WIDTH/24, fontWeight:"bold"}}>답변완료</Text>
                                                     {
                                                         value.commentArray.map((comment,index)=>(
-                                                            <Text key={index} style={{marginVertical:5}}>{comment.content}</Text>
+                                                            <Text key={index} style={{fontSize:_WIDTH/27, marginVertical:5}}>{comment.content}</Text>
                                                         ))
                                                     }
                                                 </AnswerView>
@@ -113,10 +115,10 @@ function Enquiry({navigation}) {
                                             }
                                             <BtnView>
                                                 <ModifyBtn onPress={()=>navigation.navigate("ModifyEnquiry",{data:value})}>
-                                                    <Text style={{textAlign:"center", fontSize:15, color: "white"}}>수정하기</Text>
+                                                    <Text style={{textAlign:"center", fontSize:_WIDTH/27, color: "white"}}>수정하기</Text>
                                                 </ModifyBtn>
                                                 <ModifyBtn onPress={()=>deletePost(value.id)}>
-                                                    <Text style={{textAlign:"center", fontSize:15, color: "white"}}>삭제하기</Text>
+                                                    <Text style={{textAlign:"center", fontSize:_WIDTH/27, color: "white"}}>삭제하기</Text>
                                                 </ModifyBtn>
                                             </BtnView>
                                             </>
@@ -125,12 +127,12 @@ function Enquiry({navigation}) {
                                     </MyEnquiry>
                                 )):
                                     <View style={{width:"100%",height:100,justifyContent:"center",alignItems:"center"}}>
-                                        <Text>문의글이 없습니다</Text>
+                                        <Text style={{fontSize:_WIDTH/25}}>문의글이 없습니다</Text>
                                     </View>
                                 }
                             </EnquiryList>
                             <ResistBtn onPress={()=>navigation.navigate("ResistEnquiry")}>
-                                <Text style={{textAlign:"center", fontSize:20}}>문의하기</Text>
+                                <Text style={{textAlign:"center", fontSize:_WIDTH/22}}>문의하기</Text>
                             </ResistBtn>
                         </ScrollView>
                     </EnquiryView>
@@ -141,10 +143,10 @@ function Enquiry({navigation}) {
 }
 
 const FakeLogo = styled.View`
-    width : 90px;
-    height : 90px;
+    width : ${_WIDTH/5}px;
+    height : ${_WIDTH/5}px;
     background-color : white;
-    border-radius : 20px;
+    border-radius : ${_WIDTH/25}px;
 `;
 const EnquiryView = styled.View`
     width : 100%;
@@ -152,14 +154,14 @@ const EnquiryView = styled.View`
 `;
 const EnquiryList = styled.View`
     width : 100%;
-    padding : 25px 10px;
+    padding : 7% 3%;
     background-color : white;
     border-radius : 20px;
-    margin-bottom : 20px;
+    margin-bottom : ${_WIDTH/20}px;
 `;
 const ResistBtn = styled.TouchableOpacity`
     width : 100%;
-    height : 50px;
+    height : ${_HEIGHT/13}px;
     justify-content : center;
     background-color : white;
     border-radius : 30px;
@@ -173,21 +175,21 @@ const Category = styled.Text`
     width : 90%;
     margin-bottom : 1%;
     text-align : left;
-    font-size : 13px;
+    font-size : ${_WIDTH/32}px;
 `;
 const MyEnquiryColumn = styled.View`
     width : 90%;
-    height : 30px;
+    height : ${_HEIGHT/25}px;
     flex-direction : row;
     justify-content : space-between;
     align-items : center;
     border-bottom-width : 2px;
 `;
 const Title = styled.Text`
-    font-size : 15px;
+    font-size : ${_WIDTH/28}px;
 `;
 const Condition = styled.Text`
-    font-size : 12px;
+    font-size : ${_WIDTH/30}px;
     margin-right : 5px;
 `;
 const MyEnquiryView = styled.View`
@@ -197,7 +199,7 @@ const MyEnquiryView = styled.View`
 `;
 const AnswerView = styled.View`
     width : 90%;
-    padding : 20px 0px;
+    padding : ${_WIDTH/20}px 0px;
 `;
 const BtnView = styled.View`
     width : 90%;
