@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, ScrollView, AsyncStorage } from 'react-native';
+import { View, Text, ScrollView, AsyncStorage, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components';
@@ -9,6 +9,9 @@ import DiseaseCard from './DiseaseCard';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/user/get?token=";
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function Caution({navigation}) {
     const [token,setToken] = useState("");
@@ -46,8 +49,8 @@ function Caution({navigation}) {
             </View>
             <DiseaseView>
                 <DiseaseTitle>
-                    <Text style={{textAlign:"center", fontSize:20, fontWeight:"bold"}}>{`${userInfo.name}회원님의 위험질병`}</Text>
-                    <Icon name="bell" size={25} color="#7f8c8d" style={{position:"absolute",right:10}} onPress={()=>navigation.navigate('CautionSetting')}/>
+                    <Text style={{textAlign:"center", fontSize:_WIDTH/22, fontWeight:"bold"}}>{`${userInfo.name}회원님의 위험질병`}</Text>
+                    <Icon name="bell" size={_WIDTH/18} color="#7f8c8d" style={{position:"absolute",right:_WIDTH/30}} onPress={()=>navigation.navigate('CautionSetting')}/>
                 </DiseaseTitle>
                 <ScrollView>
                     {/*use array.map() */}
@@ -61,24 +64,24 @@ function Caution({navigation}) {
     )
 }
 const FakeLogo = styled.View`
-    width : 90px;
-    height : 90px;
+    width : ${_WIDTH/5}px;
+    height : ${_WIDTH/5}px;
     background-color : white;
-    border-radius : 20px;
+    border-radius : ${_WIDTH/20}px;
 `;
 const DiseaseView = styled.View`
     flex : 3;
-    margin : 0px 25px 40px 25px;
-    padding : 10px 15px 5px 15px;
+    margin : 0% 5% 8% 5%;
+    padding : 2% 4% 1% 4%;
     background-color : white;
 `;
 const DiseaseTitle = styled.View`
-    height : 80px;
-    margin-bottom : 10px;
+    height : ${_HEIGHT/9}px;
+    margin-bottom : ${_WIDTH/60}px;
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    border-bottom-width : 4px;
+    border-bottom-width : ${_WIDTH*0.01}px;
     border-bottom-color : #7f8c8d;
 `;
 

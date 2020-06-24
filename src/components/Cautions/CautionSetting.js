@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, AsyncStorage } from 'react-native';
+import { View, Text, AsyncStorage, Dimensions } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
+const _WIDTH = Dimensions.get('window').width;
+const _HEIGHT = Dimensions.get('window').height;
 
 function CautionSetting({navigation}) {
     const [all, setAll] = useState(false);
@@ -15,7 +18,7 @@ function CautionSetting({navigation}) {
 
     useEffect(() => {
         getAsyncStorage();
-    }, [])
+    }, []);
     const setAsyncStorage = async () => {
         await AsyncStorage.setItem("alram",JSON.stringify({
             all : all.toString(), danger : danger.toString(), caution : caution.toString()
@@ -37,8 +40,8 @@ function CautionSetting({navigation}) {
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
             <SafeAreaView style={{flex:1,width:"100%",height:"100%"}}>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', paddingTop:80 }}>
-                <Icon name="angle-left" size={28} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', paddingTop:_HEIGHT/10 }}>
+                <Icon name="angle-left" size={_WIDTH/12} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
                 <AlarmView>
                     <Title>알림 설정</Title>
                     <LinearLine />
@@ -74,7 +77,7 @@ function CautionSetting({navigation}) {
                         />
                     </RowView>
                 </AlarmView>
-                <SetBtn onPress={()=>setAsyncStorage()}><Text style={{fontSize:23}}>설정완료</Text></SetBtn>
+                <SetBtn onPress={()=>setAsyncStorage()}><Text style={{fontSize:_WIDTH/18}}>설정완료</Text></SetBtn>
             </View>
             </SafeAreaView>
         </LinearGradient>
@@ -83,46 +86,46 @@ function CautionSetting({navigation}) {
 
 const AlarmView = styled.View`
     width : 90%;
-    height : 300px;
-    padding : 20px 10px 0px 10px;
+    height : ${_HEIGHT*0.35}px;
+    padding : 6% 4% 0% 4%;
     background-color : white;
     border-radius : 20px;
     align-items : center;
 `;
 const Title = styled.Text`
-    font-size : 30px;
+    font-size : ${_WIDTH/16}px;
     text-align : center;
 `;
 const LinearLine = styled.View`
     width : 100%;
-    height : 5px;
+    height : ${_WIDTH/80}px;
     background-color : gray;
     margin : 5px;
 `;
 const LinearLine2 = styled.View`
     width : 100%;
-    height : 1px;
+    height : ${_WIDTH*0.003}px;
     background-color : gray;
     margin : 5px;
 `;
 const RowView = styled.View`
     width : 90%
-    height : 50px;
+    height : ${_HEIGHT/15}px;
     flex-direction : row;
     justify-content : space-between;
     align-items : center;
 `;
 const AlarmText = styled.Text`
-    font-size : 20px;
+    font-size : ${_WIDTH/22}px;
     color : black;
 `;
 const AlarmSwitch = styled.Switch`
-    transform : scaleX(0.9) scaleY(0.9);
+    transform : scaleX(${_WIDTH*0.0028}) scaleY(${_WIDTH*0.0028});
 `;
 const SetBtn = styled.TouchableOpacity`
     width : 90%;
-    height : 60px;
-    margin-top : 30px;
+    height : ${_HEIGHT/12}px;
+    margin-top : ${_HEIGHT/23}px;
     background-color : white;
     border-radius : 30px;
     justify-content : center;
