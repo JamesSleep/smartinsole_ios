@@ -3,6 +3,7 @@ import { StyleSheet ,StatusBar, Image, AsyncStorage, Dimensions } from 'react-na
 import { Text, View, Button, Thumbnail } from 'native-base'; //사용하지않을예정 수정필요
 import LinearGradient from 'react-native-linear-gradient'; //그라데이션 모듈
 import Axios from 'axios';
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/user/get?token=";
@@ -12,9 +13,19 @@ const _HEIGHT = Dimensions.get('window').height;
 function Home({navigation}) {
 	const [token, setToken] = useState("");
 	useEffect(() => {
+		askPermission();
 		autoLogin();
 	},[])
-
+	const askPermission = async () => {
+		try {
+			const result = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION);
+			if (result !== RESULTS.GRANTED) {
+				alert("권한설정을 해주세요. 기기설정이 제한됩니다.");
+			}
+		} catch (e) {
+			console.log(e);
+		}
+	}
 	const autoLogin = async () => {
 		await AsyncStorage.getItem('loginInfo')
 		.then(res=>{
@@ -22,8 +33,6 @@ function Home({navigation}) {
 			if(data != null) { 
 				setToken(data.token);
 				loadUserData(data.token);
-			} else {
-				
 			}
 		})
 	}

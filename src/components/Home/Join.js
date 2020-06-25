@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import Axios from 'axios';
+import { check } from 'react-native-permissions';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
@@ -12,7 +13,8 @@ const _HEIGHT = Dimensions.get('window').height;
 const SITE_URL = "http://foot.chaeft.com:8080/api";
 const JOIN_API = "/auth/signup";
 const HAS_EMAIL_API = "/auth/hasEmail";
-const USE_NUMBER_API = "/auto/useNumber";
+const USE_NUMBER_API = "/auth/useNumber";
+const LOGIN_API = "/auth/signin";
 
 function Join({navigation}) {
 const [email, setEmail] = useState(""); 
@@ -44,8 +46,29 @@ const post = async () => {
         }).then(res=>{
             console.log(res.data);
             if(res.data.success) { //성공하면 자동로그인, 블루투스설정화면
-                AsyncStorage.setItem("loginInfo",postData);
-                navigation.navigate("Bluetooth");
+                const postData = JSON.stringify({
+                    "loginType" : "email",
+                    "email" : email,
+                    "password" : password,
+                });
+                Axios.post(SITE_URL+LOGIN_API, postData, {
+                    headers : {	'Content-Type' : 'application/json', }
+                }).then(res=>{ // response : success, token
+                    if(res.data.success) { //블루투스 기기연결 확인 후 BT SET or MAIN
+                        AsyncStorage.setItem('loginInfo', JSON.stringify({
+                            "token" : res.data.token
+                        }));
+                        navigation.reset({
+                            index:0,
+                            routes:[{name:"Bluetooth"}]
+                        });
+                    } else {
+                        alert("로그인 정보를 확인해주세요");
+                    }
+                }).catch(err=>{
+                    console.log("err :" + err);
+                    alert(JSON.stringify(err));
+                });
             } else {
                 if(res.data.message === "number already used") {
                     alert("이미 가입된 핸드폰번호입니다.");
@@ -134,7 +157,7 @@ const checkInput = (token) => {
 // 이메일 중복확인
 const emailCheck = async () => {
     const postData = JSON.stringify({ "email" : email })
-    if(checkInput("email") !== null) {
+    if(checkInput("email") === undefined && email !== "") {
         await Axios.post(SITE_URL+HAS_EMAIL_API, postData, {
             headers : {
                 'Content-Type' : 'application/json',
@@ -157,7 +180,7 @@ const emailCheck = async () => {
 // 핸드폰 번호 중복확인
 const phoneNumCheck = async () => {
     const postData = JSON.stringify({ "number" : phoneNum })
-    if("유효성검사") {
+    if(checkInput("phone") === undefined && phoneNum !== "") {
         await Axios.post(SITE_URL+USE_NUMBER_API, postData, {
             headers : {
                 'Content-Type' : 'application/json',
@@ -174,7 +197,7 @@ const phoneNumCheck = async () => {
             alert(JSON.stringify(err));
         });
     } else {
-        // 유효성 검사
+        alert("핸드폰번호를 먼저 확인해주세요");
     }
 }
 
@@ -278,7 +301,7 @@ return (
                         <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 1:false})}/>
                         :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 1:true})}/>}
                     </CheckBox>
-                    <Text style={{fontSize:_WIDTH/35, color:"#4834d4"}}>생체 데이터 전송 동의(필수)</Text>
+                    <Text onPress={()=>setCheck({...isCheck,1:!isCheck[1]})} style={{fontSize:_WIDTH/35, color:"#4834d4"}}>생체 데이터 전송 동의(필수)</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
@@ -286,7 +309,7 @@ return (
                         <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 2:false})}/>
                         :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 2:true})}/>}
                     </CheckBox>
-                    <Text style={{fontSize:_WIDTH/35,color:"#4834d4"}}>개인정보 수집 및 이용동의(필수)</Text>
+                    <Text onPress={()=>setCheck({...isCheck,2:!isCheck[2]})} style={{fontSize:_WIDTH/35,color:"#4834d4"}}>개인정보 수집 및 이용동의(필수)</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
@@ -294,7 +317,7 @@ return (
                         <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 3:false})}/>
                         :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 3:true})}/>}
                     </CheckBox>
-                    <Text style={{fontSize:_WIDTH/35}}>이용약관 동의</Text>
+                    <Text onPress={()=>setCheck({...isCheck,3:!isCheck[3]})} style={{fontSize:_WIDTH/35}}>이용약관 동의</Text>
                 </RowView>
                 <RowView>
                     <CheckBox>
@@ -302,7 +325,7 @@ return (
                         <Icon name="check-square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 4:false})}/>
                         :<Icon name="square-o" size={_WIDTH/20} onPress={()=>setCheck({...isCheck, 4:true})}/>}
                     </CheckBox>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                    <Text style={{fontSize:_WIDTH/35}}>개인정보 취급 위탁 동의</Text>
+                    <Text onPress={()=>setCheck({...isCheck,4:!isCheck[4]})} style={{fontSize:_WIDTH/35}}>개인정보 취급 위탁 동의</Text>
                 </RowView>
             </AgreeForm>
             <View style={{alignItems:"center", marginVertical:20}}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

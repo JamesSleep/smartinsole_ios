@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Dimensions } from 'react-native'
+import { Text, View, Dimensions, Alert } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -59,6 +59,7 @@ function Bluetooth({navigation}) {
             if(!scan) {
                 manager.stopDeviceScan();
                 console.log("Don't found L");
+                alert("블루투스 전원 및 기기페어링을 확인해주세요");
                 setScan(false);
             }
         }, 5000);
