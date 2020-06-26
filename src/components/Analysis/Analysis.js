@@ -33,9 +33,6 @@ function Analysis({navigation}) {
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1, alignItems:"center"}} >
             <SafeAreaView style={{flex:1, width:"100%",height:"100%"}} >
-            <View style={{flex:1 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:30}}>
-                <FakeLogo/>
-            </View>
             <View style={{flex:6, width:"100%",height:"100%", justifyContent:"center",alignItems:"center", paddingBottom:20}}>
                 <View style={{width:"85%", justifyContent:"flex-end" }}>
                     <InsoleTab>

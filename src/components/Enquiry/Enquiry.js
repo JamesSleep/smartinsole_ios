@@ -75,10 +75,7 @@ function Enquiry({navigation}) {
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}} >
              <SafeAreaView style={{flex:1, width:"100%",height:"100%"}} >
-                <View style={{flex:1 ,width:"100%",height:"100%", justifyContent:"center",alignItems:"center", marginTop:_HEIGHT/40}}>
-                    <FakeLogo/>
-                </View>
-                <View style={{flex:4, width:"100%",height:"100%",paddingHorizontal:_WIDTH/20, justifyContent:"flex-start",alignItems:"center", paddingBottom:_WIDTH/20}}>
+                <View style={{flex:4, width:"100%",height:"100%",paddingHorizontal:_WIDTH/20, justifyContent:"flex-start",alignItems:"center",marginTop:30, paddingBottom:_WIDTH/20}}>
                     <Text style={{width:"90%", color:"white", textAlign:"left", fontSize:_WIDTH/22, marginBottom:5}}>나의 문의글</Text>
                     <EnquiryView>
                         <ScrollView>

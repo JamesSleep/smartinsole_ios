@@ -54,7 +54,7 @@ function Profile({navigation}) {
                     <Text style={{color:"white", fontSize:_WIDTH/25}}>로그아웃</Text>
                 </TouchableOpacity>
                 <View style={{flex:2, justifyContent:"center", alignItems:"center"}}>
-                    <ProfileIMG></ProfileIMG>
+                    <Icon name={"user-circle"} size={_WIDTH/5} color={'white'} style={{borderRadius:50}}/>
                     <Text style={{color:"white", fontSize:_WIDTH/28}}>프로필</Text>
                 </View>
                 <View style={{flex:4}}>

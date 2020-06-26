@@ -39,8 +39,7 @@ function Main({navigation, route}) {
     const manager = new BleManager();
     useEffect(() => {
         getToken();
-        if(leftDevice.id.length) getInsoleData();
-        
+        if(leftDevice.id.length > 0) getInsoleData();    
     }, []);
     const getToken = async () => {
 		await AsyncStorage.getItem('loginInfo')
@@ -158,9 +157,9 @@ function Main({navigation, route}) {
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1, alignItems:"center"}} >
             <SafeAreaView style={{flex:1, width:"100%"}}>
             <View style={{flex:2 ,width:"100%", justifyContent:"center",alignItems:"center"}}>
-                <FakeLogo />
-                <Profile >
-                    <ProfileIcon onPress={()=>navigation.navigate('Profile')}/>
+                <FakeLogo source={require('../../image/icon.png')}/>
+                <Profile onTouchEnd={()=>navigation.navigate('Profile')}>
+                    <Icon name={"user-circle"} size={_WIDTH/12} color={'white'} style={{borderRadius:50}}/>
                     <Text style={{fontSize:_WIDTH/32, color:"white"}}>프로필</Text>
                 </Profile>
             </View>
@@ -199,10 +198,9 @@ function Main({navigation, route}) {
     )
     
 }
-const FakeLogo = styled.View`
+const FakeLogo = styled.Image`
     width : ${_WIDTH/5}px;
     height : ${_WIDTH/5}px;
-    background-color : white;
     border-radius : ${_WIDTH/25}px;
 `;
 const Profile = styled.View`
@@ -213,11 +211,10 @@ const Profile = styled.View`
     justify-content : center;
     align-items : center;
 `;
-const ProfileIcon = styled.TouchableOpacity`
-    width : ${_WIDTH/8}px;
-    height : ${_WIDTH/8}px;
+const ProfileIcon = styled.Image`
+    width : ${_WIDTH/12}px;
+    height : ${_WIDTH/12}px;
     border-radius : 50px;
-    background-color : white;
 `;
 const ConnectView = styled.View`
     width : 85%;

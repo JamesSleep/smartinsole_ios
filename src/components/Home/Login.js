@@ -45,7 +45,7 @@ function Login({navigation}) {
 			<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
 				<View style ={{flex:1, width:"100%", height:"100%", justifyContent:"center",alignItems:"center"}}>
 					<Icon name="angle-left" size={40} color="#fff" style={{position:"absolute",left:20,top:10}} onPress={()=>navigation.goBack()}/>
-					<FakeLogo />
+					<FakeLogo source={require('../../image/icon.png')}/>
 					<LoginCard>
 						<InputData onChangeText={text=>setEmail(text)} placeholder="이메일" placeholderTextColor="gray"/>
 						<InputData onChangeText={text=>setPW(text)} secureTextEntry placeholder="비밀번호" placeholderTextColor="gray"/>
@@ -61,10 +61,9 @@ function Login({navigation}) {
     );
 }
 
-const FakeLogo = styled.View`
+const FakeLogo = styled.Image`
 	width : ${_WIDTH/4}px;
 	height : ${_WIDTH/4}px;
-	background-color : white;
 	border-radius : ${_HEIGHT/25}px;
 `;
 

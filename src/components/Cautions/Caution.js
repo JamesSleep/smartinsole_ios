@@ -44,9 +44,6 @@ function Caution({navigation}) {
     return (
         <LinearGradient start={{x: 1.5, y: 0}} end={{x: 0, y: 0}} colors={['#B2FEFA', '#0ED2F7']} style={{flex:1}}>
             <SafeAreaView style={{flex:1}}>
-            <View style={{flex:1, width:"100%", justifyContent:"center",alignItems:"center"}}>
-                <FakeLogo/>
-            </View>
             <DiseaseView>
                 <DiseaseTitle>
                     <Text style={{textAlign:"center", fontSize:_WIDTH/22, fontWeight:"bold"}}>{`${userInfo.name}회원님의 위험질병`}</Text>
@@ -71,7 +68,7 @@ const FakeLogo = styled.View`
 `;
 const DiseaseView = styled.View`
     flex : 3;
-    margin : 0% 5% 8% 5%;
+    margin : 3% 5% 8% 5%;
     padding : 2% 4% 1% 4%;
     background-color : white;
 `;

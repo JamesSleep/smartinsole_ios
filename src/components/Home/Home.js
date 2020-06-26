@@ -58,7 +58,7 @@ function Home({navigation}) {
 			<StatusBar hidden={true}/>
 			<View style={css.wrapView}>
 				<View style={css.logoView}>
-					<Thumbnail style={css.logo} square/>
+					<Thumbnail style={css.logo} square source={require('../../image/icon.png')}/>
 					<Button style={css.joinBtn} onPress={()=>navigation.navigate('Join')}>
 						<Text style={{color:"black",fontSize:_WIDTH/20,fontWeight:"bold"}}>회원가입</Text>
 					</Button>
