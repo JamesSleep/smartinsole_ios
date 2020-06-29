@@ -1,5 +1,6 @@
 # Foot_Care
-* 6/18 마감 스마트인솔 프로젝트 (2주연기)
+* 6/18 마감 스마트인솔 프로젝트 (2주연기) 
+* 프로젝트 잠정 중단
 
 ### NPM PACKAGE STACK
 * react-native-ble-plx  (블루투스 연결)
@@ -15,7 +16,6 @@
 * styled-components (css)
 
 ### To Do List
-* context API 이용 (device size, theme color, login token)
 * API JS파일 생성
 * react-natvie-keychain pod install
 * ios 반응형 사이즈 확인
