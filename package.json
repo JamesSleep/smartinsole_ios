@@ -1,5 +1,5 @@
 {
-  "name": "Foot_Care",
+  "name": "스마트인솔",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -34,6 +34,7 @@
     "react-native-permissions": "2.1.5",
     "react-native-radial-gradient": "1.0.7",
     "react-native-reanimated": "^1.9.0",
+    "react-native-rename": "^2.4.1",
     "react-native-safe-area-context": "^2.0.3",
     "react-native-screens": "^2.8.0",
     "react-native-splash-screen": "^3.2.0",

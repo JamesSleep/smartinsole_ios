@@ -12,6 +12,6 @@ public class MainActivity extends ReactActivity {
     }
   @Override
   protected String getMainComponentName() {
-    return "Foot_Care";
+    return "스마트인솔";
   }
 }
