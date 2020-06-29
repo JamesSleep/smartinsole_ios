@@ -42,7 +42,10 @@ function Profile({navigation}) {
     const logOut = async () => {
         await AsyncStorage.clear()
         .then(res => {
-            navigation.navigate('Home');
+            navigation.reset({
+                index:0,
+                routes:[{name:"Home"}]
+            });
         })
     }
     return (
