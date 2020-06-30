@@ -3,7 +3,9 @@ import { Text, View, Dimensions, Alert } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { BleManager } from "react-native-ble-plx"
+import { BleManager } from "react-native-ble-plx";
+import base64 from "react-native-base64";
+import { requestMTU } from 'react-native-ble-manager';
  
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
@@ -24,7 +26,7 @@ function Bluetooth({navigation}) {
     useEffect(() => {
         isPowered();
         if(scan) scanAndConnect();
-        if(leftDevice.id.length > 0) doConnect();
+        
     },[power, scan, leftDevice]);
 
     const isPowered = () => {
@@ -46,7 +48,6 @@ function Bluetooth({navigation}) {
                 manager.stopDeviceScan();
                 console.log("scan complete");
                 setScan(false);
-                console.log(device.id)
                 setLeftDevice({
                     ...leftDevice,
                     id: device.id,
@@ -65,7 +66,7 @@ function Bluetooth({navigation}) {
         }, 5000);
     };
     const connecting = async id => {
-        await manager.connectToDevice(id)
+        await manager.connectToDevice(id, {requestMTU: 260})
         .then(res => {
             setLeftDevice({...leftDevice,
                 isConnect : true
@@ -78,7 +79,6 @@ function Bluetooth({navigation}) {
             for(let service of services) {
                 let characteristicsMap = {};
                 let characteristics = await service.characteristics();
-
                 for (let characteristic of characteristics) {
                     characteristicsMap[characteristic.uuid] = {
                         uuid : characteristic.uuid,
@@ -97,11 +97,24 @@ function Bluetooth({navigation}) {
                     characteristics : characteristicsMap
                 }
             }
-            console.log(servicesMap);
-            setLeftDevice({
-                ...leftDevice,
-                servicesMap: servicesMap
-            });
+            let characteristicUUID; 
+            const serviceUUIDs = leftDevice.uuid;
+            const id = leftDevice.id;
+            for(let i in servicesMap) {
+                let uuid = i;
+                if(uuid === serviceUUIDs) {
+                    let chID = servicesMap[uuid].characteristics;
+                    for(let inner in chID) characteristicUUID = inner;
+                }
+            }
+            manager.monitorCharacteristicForDevice(id,serviceUUIDs,characteristicUUID, async (err, char) => {
+                console.log( base64.decode( char.value));
+            })
+
+           /*  await manager.readCharacteristicForDevice(id,serviceUUIDs,characteristicUUID,)
+            .then(res => {
+                console.log(base64.decode(res.value));
+            }); */
         });
     };
     const doConnect = async () => {
@@ -136,7 +149,7 @@ function Bluetooth({navigation}) {
                             <Icon name="check-circle" size={_WIDTH/11}  color={leftDevice.isConnect?"#34ace0":"#d1ccc0"} />
                         </View>
                     </BluetoothBox>
-                    <BluetoothBox>
+                    <BluetoothBox onTouchEnd={()=>connecting(leftDevice.id)}>
                         <Text style={{fontSize:_WIDTH/30, fontWeight:"bold"}}>오른쪽 인솔 연결</Text>
                         <Text style={{fontSize:_WIDTH/33, color:"#d1ccc0"}}>{"R"}</Text>
                         <View style={{justifyContent:"center",alignItems:"center",height:"50%"}}>
