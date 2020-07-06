@@ -6,7 +6,7 @@ import WebView  from 'react-native-webview';
 function Social({navigation}) {
     return (
         <>
-        <View >
+        <View>
             <TouchableOpacity onPress={()=>navigation.goBack()}><Text>back</Text></TouchableOpacity>
         </View>
         <View>

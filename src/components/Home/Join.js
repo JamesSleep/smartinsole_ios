@@ -5,12 +5,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import Axios from 'axios';
-import { check } from 'react-native-permissions';
+import { API_URL } from '../../../api';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const JOIN_API = "/auth/signup";
 const HAS_EMAIL_API = "/auth/hasEmail";
 const USE_NUMBER_API = "/auth/useNumber";

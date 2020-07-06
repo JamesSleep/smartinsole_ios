@@ -7,11 +7,12 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import styled from 'styled-components';
 import Axios from 'axios';
 import Modal from 'react-native-modal';
+import { API_URL } from '../../../api';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = ["/board/categories?token=","/board/mod?token="];
 
 function ModifyEnquiry({navigation, route}) {

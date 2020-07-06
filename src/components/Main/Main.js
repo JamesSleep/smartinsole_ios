@@ -8,6 +8,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Axios from 'axios';
 import { BleManager } from "react-native-ble-plx";
 import base64 from "react-native-base64";
+import { API_URL } from '../../../api';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
@@ -15,7 +16,7 @@ const _HEIGHT = Dimensions.get('window').height;
 const LEFT_INSOLE_NAME = "left insole"; 
 const RIGHT_INSOLE_NAME = "right insole";
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = "/data/data?token=";
 
 const FAKE_DB = [

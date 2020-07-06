@@ -5,11 +5,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { View, Text, ScrollView, AsyncStorage, Dimensions } from 'react-native';
 import Axios from 'axios';
+import { API_URL } from '../../../api';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = ["/board/list?start=1&token=","/comment/list"];
 
 function Enquiry({navigation}) {

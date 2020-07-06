@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet ,StatusBar, Image, AsyncStorage, Dimensions } from 'react-native';
+import { StyleSheet ,StatusBar, Image, AsyncStorage, Dimensions, Platform } from 'react-native';
 import { Text, View, Button, Thumbnail } from 'native-base'; //사용하지않을예정 수정필요
 import LinearGradient from 'react-native-linear-gradient'; //그라데이션 모듈
 import Axios from 'axios';
 import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
+import { API_URL } from '../../../api';
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
 const API = "/user/get?token=";
+const SITE_URL = API_URL+API;
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 
 function Home({navigation}) {
 	const [token, setToken] = useState("");
 	useEffect(() => {
-		askPermission();
+		if(Platform.OS === "android") askPermission();
 		autoLogin();
 	},[])
 	const askPermission = async () => {
@@ -37,7 +38,7 @@ function Home({navigation}) {
 		})
 	}
     const loadUserData = async (storageToken) => {
-        await Axios.get(SITE_URL+API+storageToken)
+        await Axios.get(SITE_URL+storageToken)
         .then(res=>{ 
 			if(res.data.success) {
 				navigation.reset({

@@ -8,11 +8,12 @@ import styled from 'styled-components';
 import Axios from 'axios';
 import Modal from 'react-native-modal';
 import { ScrollView } from "react-native-gesture-handler";
+import { API_URL } from "../../../api";
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = ["/board/categories?token=","/board/write?token="];
 
 function ResistEnquiry({navigation}) {

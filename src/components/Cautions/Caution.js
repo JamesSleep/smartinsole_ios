@@ -6,8 +6,9 @@ import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Axios from 'axios';
 import DiseaseCard from './DiseaseCard';
+import { API_URL } from '../../../api';
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = "/user/get?token=";
 
 const _WIDTH = Dimensions.get('window').width;

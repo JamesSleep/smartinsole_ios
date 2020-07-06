@@ -5,8 +5,9 @@ import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Axios from 'axios';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { API_URL } from '../../../api';
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = "/user/mod_pw?token=";
 
 const _WIDTH = Dimensions.get('window').width;

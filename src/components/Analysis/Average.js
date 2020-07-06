@@ -7,6 +7,7 @@ import Calendar from './Calendar';
 import Chart from './Chart';
 import InsoleData from '../Insole/InsoleData';
 import Axios from 'axios';
+import { API_URL } from '../../../api';
 
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
@@ -17,7 +18,7 @@ const FAKE_DB = {
     right : {temp:[27,21,32,33,42], press:[157, 230, 1481, 1776, 2213, 2536, 3640, 3756, 4021]} 
 };
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const API = "/user/data";
 
 function Average() {

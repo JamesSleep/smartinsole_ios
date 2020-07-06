@@ -5,8 +5,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styled from 'styled-components';
 import Axios from 'axios';
+import { API_URL } from '../../../api';
 
-const SITE_URL = "http://foot.chaeft.com:8080/api";
+const SITE_URL = API_URL;
 const JOIN_API = "/user/mod?token=";
 
 const _WIDTH = Dimensions.get('window').width;

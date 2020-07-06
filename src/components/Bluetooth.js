@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { BleManager } from "react-native-ble-plx";
 import base64 from "react-native-base64";
-import { requestMTU } from 'react-native-ble-manager';
  
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
