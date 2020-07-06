@@ -10,7 +10,7 @@ import { requestMTU } from 'react-native-ble-manager';
 const _WIDTH = Dimensions.get('window').width;
 const _HEIGHT = Dimensions.get('window').height;
 const LEFT_NAME = "L";
-const RIGHT_NAME = "";
+const RIGHT_NAME = "R";
 
 function Bluetooth({navigation}) { 
     const [power, setPower] = useState(false);
@@ -108,7 +108,7 @@ function Bluetooth({navigation}) {
                 }
             }
             manager.monitorCharacteristicForDevice(id,serviceUUIDs,characteristicUUID, async (err, char) => {
-                console.log( base64.decode( char.value));
+                console.log(base64.decode(char.value));
             })
 
            /*  await manager.readCharacteristicForDevice(id,serviceUUIDs,characteristicUUID,)
