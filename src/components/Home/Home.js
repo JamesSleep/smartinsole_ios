@@ -72,19 +72,19 @@ function Home({navigation}) {
 					</View>
 					<View style={{width:"90%", flexDirection:"row", justifyContent:"space-around", marginTop:20 }}>
 						<View style={{alignItems:"center"}}>
-							<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
+							<Button style={css.socialBtn}>
 								<Image style={{width:_WIDTH/5, height:_WIDTH/5}} source={require('../../image/kakaotalk.png')}/>
 							</Button>
 							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>카카오톡</Text>
 						</View>
 						<View style={{alignItems:"center"}}>
-							<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
+							<Button style={css.socialBtn}>
 									<Image style={{width:_WIDTH/6, height:_WIDTH/6}} source={require('../../image/google2.png')}/>
 							</Button>
 							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>Google</Text>
 						</View>
 						<View style={{alignItems:"center"}}>
-						<Button style={css.socialBtn} onPress={()=>navigation.navigate('Social')}>
+						<Button style={css.socialBtn}>
 								<Image style={{width:_WIDTH/5, height:_WIDTH/5}} source={require('../../image/naver.png')}/>
 							</Button>
 							<Text style={{fontSize:_WIDTH/28, color: "#fff"}}>네이버</Text>

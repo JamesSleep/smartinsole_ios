@@ -10,7 +10,7 @@ function InsoleData({name , data, route}) {
         <>
         <View style={{flex:1}}>
             { route === "Main" ?
-              <Text style={{fontSize:_WIDTH/30}}>실시간 모니터링</Text>
+              <Text style={{fontSize:_WIDTH/30, top: 10, left: 10}}>실시간 모니터링</Text>
               : null }
         </View>
         <View style={{flex:10,flexDirection:"row"}}>

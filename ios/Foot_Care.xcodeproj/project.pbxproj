@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Foot_CareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Foot_CareTests.m */; };
-		043447912491B6F6002720CE /* FootCare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0434478F2491B6F6002720CE /* FootCare.jpg */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* Foot_CareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Foot_CareTests.m */; };
+		3998FF7624B5C1E500FBE91F /* foot_care.png in Resources */ = {isa = PBXBuildFile; fileRef = 3998FF7524B5C1E500FBE91F /* foot_care.png */; };
+		3998FF8E24B5EC6600FBE91F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3998FF8D24B5EC6600FBE91F /* Launch Screen.storyboard */; };
 		42B4392AA19C7F681F5C9784 /* libPods-Foot_Care.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A67EC2BEC49E1D47F5036E /* libPods-Foot_Care.a */; };
 		BCD16B92DC8CB68E0A2EA388 /* libPods-Foot_Care-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6BACAB35B5D1AC852D86C2 /* libPods-Foot_Care-tvOSTests.a */; };
 		C9CEC889E9F4E3CE8EA61E34 /* libPods-Foot_Care-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2996C133EEB2AF42D0AFF38C /* libPods-Foot_Care-tvOS.a */; };
@@ -45,6 +45,13 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "Foot_Care-tvOS";
 		};
+		3998FF7224B5C01800FBE91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3998FF6E24B5C01800FBE91F /* SplashScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7682761D8E76B80014119E;
+			remoteInfo = SplashScreen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,13 +61,11 @@
 		00E356EE1AD99517003FC87E /* Foot_CareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Foot_CareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Foot_CareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foot_CareTests.m; sourceTree = "<group>"; };
-		0434478F2491B6F6002720CE /* FootCare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FootCare.jpg; sourceTree = "<group>"; };
 		097C6AA57E9C447E8BB8F22D /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		135AB8E2A2DE4893BF8A96E5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Foot_Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foot_Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Foot_Care/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Foot_Care/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Foot_Care/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Foot_Care/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Foot_Care/main.m; sourceTree = "<group>"; };
@@ -71,6 +76,9 @@
 		323CEE9006C1B2BE7C00D4B1 /* Pods-Foot_Care.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foot_Care.debug.xcconfig"; path = "Target Support Files/Pods-Foot_Care/Pods-Foot_Care.debug.xcconfig"; sourceTree = "<group>"; };
 		3378A621B2F842F89DC4BC55 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		38B829A0A8BB4F1CBC8A9E8A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		3998FF6E24B5C01800FBE91F /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		3998FF7524B5C1E500FBE91F /* foot_care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foot_care.png; path = ../android/app/src/main/res/drawable/foot_care.png; sourceTree = "<group>"; };
+		3998FF8D24B5EC6600FBE91F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Foot_Care/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		43E4317B5CFF6FDB12A1E5F7 /* Pods-Foot_Care-Foot_CareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foot_Care-Foot_CareTests.release.xcconfig"; path = "Target Support Files/Pods-Foot_Care-Foot_CareTests/Pods-Foot_Care-Foot_CareTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A800D9C295A461C9E6C109B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		5EED2D1B1ECC4BD090E5B641 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
@@ -171,13 +179,13 @@
 		13B07FAE1A68108700A75B9A /* Foot_Care */ = {
 			isa = PBXGroup;
 			children = (
+				3998FF8D24B5EC6600FBE91F /* Launch Screen.storyboard */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				3998FF7524B5C1E500FBE91F /* foot_care.png */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				0434478F2491B6F6002720CE /* FootCare.jpg */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = Foot_Care;
@@ -211,9 +219,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3998FF6F24B5C01800FBE91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3998FF7324B5C01800FBE91F /* libSplashScreen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3998FF6E24B5C01800FBE91F /* SplashScreen.xcodeproj */,
 				9F87ED79FF194B56B1361DD5 /* RCTBluetoothSerial.xcodeproj */,
 			);
 			name = Libraries;
@@ -399,6 +416,10 @@
 					ProductGroup = 045010E72490A2FD0079E56A /* Products */;
 					ProjectRef = 9F87ED79FF194B56B1361DD5 /* RCTBluetoothSerial.xcodeproj */;
 				},
+				{
+					ProductGroup = 3998FF6F24B5C01800FBE91F /* Products */;
+					ProjectRef = 3998FF6E24B5C01800FBE91F /* SplashScreen.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -418,6 +439,13 @@
 			remoteRef = 045010EA2490A2FD0079E56A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3998FF7324B5C01800FBE91F /* libSplashScreen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSplashScreen.a;
+			remoteRef = 3998FF7224B5C01800FBE91F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -432,9 +460,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3998FF8E24B5EC6600FBE91F /* Launch Screen.storyboard in Resources */,
+				3998FF7624B5C1E500FBE91F /* foot_care.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				043447912491B6F6002720CE /* FootCare.jpg in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,18 +786,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = Foot_Care;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -843,8 +859,10 @@
 					"$(inherited)",
 					"$(SRCROOT)/..",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial-next/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios/",
 				);
 				INFOPLIST_FILE = Foot_Care/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -871,8 +889,10 @@
 					"$(inherited)",
 					"$(SRCROOT)/..",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial-next/ios/RCTBluetoothSerial",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios/",
 				);
 				INFOPLIST_FILE = Foot_Care/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

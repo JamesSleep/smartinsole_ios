@@ -44,10 +44,10 @@ def flipper_post_install(installer)
   end
 end
 
-target '스마트인솔' do
+target 'Foot_Care' do
   
   
-  # Pods for 스마트인솔
+  # Pods for Foot_Care
   permissions_path = '../node_modules/react-native-permissions/ios'
   
   pod 'Permission-BluetoothPeripheral', :path => "#{permissions_path}/BluetoothPeripheral.podspec"
@@ -89,7 +89,7 @@ target '스마트인솔' do
 
   pod 'react-native-ble-plx', :path => '../node_modules/react-native-ble-plx'
 
-  target '스마트인솔Tests' do
+  target 'Foot_CareTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -106,10 +106,10 @@ target '스마트인솔' do
   end
 end
 
-target '스마트인솔-tvOS' do
-  # Pods for 스마트인솔-tvOS
+target 'Foot_Care-tvOS' do
+  # Pods for Foot_Care-tvOS
 
-  target '스마트인솔-tvOSTests' do
+  target 'Foot_Care-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

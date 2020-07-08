@@ -1,4 +1,4 @@
-# Referenced at C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:28
+# Referenced at /Users/jamessleep/Documents/WebProject/smartinsole_ios/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:28
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\JamesSleep\Documents\WebProject\smartinsole_ios\android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:28
+# Referenced at /Users/jamessleep/Documents/WebProject/smartinsole_ios/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:28
 -keep class com.foot_care.MainApplication { <init>(); }
